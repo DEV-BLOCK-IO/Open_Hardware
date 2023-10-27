@@ -49,7 +49,7 @@ PrefsVaultGUID=
 PrefsRevisionGUID=
 
 [Document1]
-DocumentPath=G-Board.OutJob
+DocumentPath=..\G-Board.OutJob
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -66,7 +66,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document2]
-DocumentPath=erb-pcb0002.PcbDoc
+DocumentPath=..\erb-pcb0002.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -100,24 +100,7 @@ GenerateClassCluster=0
 DocumentUniqueId=LIMWZKEJ
 
 [Document4]
-DocumentPath=erb-pcb0002.PCBDwf
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=SAQNPBVJ
-
-[Document5]
-DocumentPath=G-Board-G070.BomDoc
+DocumentPath=..\G-Board-G070.BomDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -134,95 +117,95 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [GeneratedDocument1]
-DocumentPath=Outputs\Assembly\BOM\BOM_PartType-erb-pcb0002.xlsx
+DocumentPath=..\Outputs\Assembly\BOM\BOM_PartType-erb-pcb0002.xlsx
 DItemRevisionGUID=
 
 [GeneratedDocument2]
-DocumentPath=Outputs\Pick&Place\BOM\BOM_PartType-erb-pcb0002.xlsx
+DocumentPath=..\Outputs\Pick&Place\BOM\BOM_PartType-erb-pcb0002.xlsx
 DItemRevisionGUID=
 
 [GeneratedDocument3]
-DocumentPath=Project Outputs for G-Board-G070\Design Rule Check - erb-pcb0002.html
+DocumentPath=..\Project Outputs for G-Board-G070\Design Rule Check - erb-pcb0002.html
 DItemRevisionGUID=
 
 [GeneratedDocument4]
-DocumentPath=Project Outputs for G-Board\Design Rule Check - erb-pcb0002.html
+DocumentPath=..\Project Outputs for G-Board\Design Rule Check - erb-pcb0002.html
 DItemRevisionGUID=
 
 [GeneratedDocument5]
-DocumentPath=Outputs\NC Drill\erb-pcb0002-BoardEdgeRout.TXT
+DocumentPath=..\Outputs\NC Drill\erb-pcb0002-BoardEdgeRout.TXT
 DItemRevisionGUID=
 
 [GeneratedDocument6]
-DocumentPath=Outputs\NC Drill\erb-pcb0002.DRR
+DocumentPath=..\Outputs\NC Drill\erb-pcb0002.DRR
 DItemRevisionGUID=
 
 [GeneratedDocument7]
-DocumentPath=Outputs\Gerber\erb-pcb0002.EXTREP
+DocumentPath=..\Outputs\Gerber\erb-pcb0002.EXTREP
 DItemRevisionGUID=
 
 [GeneratedDocument8]
-DocumentPath=Outputs\Gerber\erb-pcb0002.G1
+DocumentPath=..\Outputs\Gerber\erb-pcb0002.G1
 DItemRevisionGUID=
 
 [GeneratedDocument9]
-DocumentPath=Outputs\Gerber\erb-pcb0002.G2
+DocumentPath=..\Outputs\Gerber\erb-pcb0002.G2
 DItemRevisionGUID=
 
 [GeneratedDocument10]
-DocumentPath=Outputs\Gerber\erb-pcb0002.GBL
+DocumentPath=..\Outputs\Gerber\erb-pcb0002.GBL
 DItemRevisionGUID=
 
 [GeneratedDocument11]
-DocumentPath=Outputs\Gerber\erb-pcb0002.GBO
+DocumentPath=..\Outputs\Gerber\erb-pcb0002.GBO
 DItemRevisionGUID=
 
 [GeneratedDocument12]
-DocumentPath=Outputs\Gerber\erb-pcb0002.GBS
+DocumentPath=..\Outputs\Gerber\erb-pcb0002.GBS
 DItemRevisionGUID=
 
 [GeneratedDocument13]
-DocumentPath=Outputs\Gerber\erb-pcb0002.GM1
+DocumentPath=..\Outputs\Gerber\erb-pcb0002.GM1
 DItemRevisionGUID=
 
 [GeneratedDocument14]
-DocumentPath=Outputs\Gerber\erb-pcb0002.GTL
+DocumentPath=..\Outputs\Gerber\erb-pcb0002.GTL
 DItemRevisionGUID=
 
 [GeneratedDocument15]
-DocumentPath=Outputs\Gerber\erb-pcb0002.GTO
+DocumentPath=..\Outputs\Gerber\erb-pcb0002.GTO
 DItemRevisionGUID=
 
 [GeneratedDocument16]
-DocumentPath=Outputs\Gerber\erb-pcb0002.GTP
+DocumentPath=..\Outputs\Gerber\erb-pcb0002.GTP
 DItemRevisionGUID=
 
 [GeneratedDocument17]
-DocumentPath=Outputs\Gerber\erb-pcb0002.GTS
+DocumentPath=..\Outputs\Gerber\erb-pcb0002.GTS
 DItemRevisionGUID=
 
 [GeneratedDocument18]
-DocumentPath=Outputs\NC Drill\erb-pcb0002.LDP
+DocumentPath=..\Outputs\NC Drill\erb-pcb0002.LDP
 DItemRevisionGUID=
 
 [GeneratedDocument19]
-DocumentPath=Outputs\Gerber\erb-pcb0002.REP
+DocumentPath=..\Outputs\Gerber\erb-pcb0002.REP
 DItemRevisionGUID=
 
 [GeneratedDocument20]
-DocumentPath=Outputs\Gerber\erb-pcb0002.RUL
+DocumentPath=..\Outputs\Gerber\erb-pcb0002.RUL
 DItemRevisionGUID=
 
 [GeneratedDocument21]
-DocumentPath=Outputs\NC Drill\erb-pcb0002.TXT
+DocumentPath=..\Outputs\NC Drill\erb-pcb0002.TXT
 DItemRevisionGUID=
 
 [GeneratedDocument22]
-DocumentPath=Outputs\Pick&Place\Pick Place\Pick Place for erb-pcb0002.csv
+DocumentPath=..\Outputs\Pick&Place\Pick Place\Pick Place for erb-pcb0002.csv
 DItemRevisionGUID=
 
 [GeneratedDocument23]
-DocumentPath=Outputs\Pick&Place\Pick Place\Pick Place for erb-pcb0002.txt
+DocumentPath=..\Outputs\Pick&Place\Pick Place\Pick Place for erb-pcb0002.txt
 DItemRevisionGUID=
 
 [Parameter1]
