@@ -7,5 +7,7 @@ This project is copyrighted and all rights reserved. Viewing, downloading, and s
 
 ## Author
 
+Manuel Rubin
+
 ## Contact
 

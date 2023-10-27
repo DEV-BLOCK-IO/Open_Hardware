@@ -10,7 +10,7 @@ This project is licensed under the modified MIT License for Hardware. You are fr
 ```
 MIT License for Hardware
 
-Copyright (c) [Year] [Your Full Name]
+Copyright (c) 2023 Manuel Rubin
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this hardware design and associated documentation files (the "Design"), to deal in the Design without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Design, and to permit persons to whom the Design is furnished to do so, subject to the following conditions:
 
