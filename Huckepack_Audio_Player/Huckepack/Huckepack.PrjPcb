@@ -32,6 +32,7 @@ ReportSuppressedErrorsInMessages=0
 FSMCodingStyle=eFMSDropDownList_OneProcess
 FSMEncodingStyle=eFMSDropDownList_OneHot
 IsProjectConflictPreventionWarningsEnabled=1
+ConstraintManagerFlow=0
 IsVirtualBomDocumentRemoved=0
 OutputPath=
 LogFolderPath=
@@ -49,24 +50,7 @@ PrefsVaultGUID=
 PrefsRevisionGUID=
 
 [Document1]
-DocumentPath=hep-0002.PcbDoc
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=PJGCEFWV
-
-[Document2]
-DocumentPath=MCU.SchDoc
+DocumentPath=SCH\Connectors.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -76,14 +60,14 @@ AnnotateOrder=0
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
+ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=YHTKLVHJ
+DocumentUniqueId=EZCWHIBF
 
-[Document3]
-DocumentPath=Schlib1.SchLib
+[Document2]
+DocumentPath=PCB\hep-0002.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -93,14 +77,14 @@ AnnotateOrder=-1
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
+ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=TWOKHOBA
+DocumentUniqueId=PJGCEFWV
 
-[Document4]
-DocumentPath=Connectors.SchDoc
+[Document3]
+DocumentPath=SCH\MCU.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -110,14 +94,14 @@ AnnotateOrder=1
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
+ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=NBUWEVGX
+DocumentUniqueId=YHTKLVHJ
 
-[Document5]
-DocumentPath=Audiocodec.SchDoc
+[Document4]
+DocumentPath=SCH\Audiocodec.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -127,94 +111,14 @@ AnnotateOrder=2
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
+ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=IMHDHMZV
 
 [GeneratedDocument1]
-DocumentPath=Outputs\Assembly\BOM\BOM_PartType-hep-0001.xlsx
-DItemRevisionGUID=
-
-[GeneratedDocument2]
-DocumentPath=Project Outputs for Huckepack\Design Rule Check - hep-0001.html
-DItemRevisionGUID=
-
-[GeneratedDocument3]
 DocumentPath=Project Outputs for Huckepack\Design Rule Check - hep-0002.html
-DItemRevisionGUID=
-
-[GeneratedDocument4]
-DocumentPath=Outputs\Gerber\Gerber\NC Drill\hep-0001.DRR
-DItemRevisionGUID=
-
-[GeneratedDocument5]
-DocumentPath=Outputs\Gerber\Gerber\Gerber\hep-0001.EXTREP
-DItemRevisionGUID=
-
-[GeneratedDocument6]
-DocumentPath=Outputs\Gerber\Gerber\Gerber\hep-0001.G1
-DItemRevisionGUID=
-
-[GeneratedDocument7]
-DocumentPath=Outputs\Gerber\Gerber\Gerber\hep-0001.G2
-DItemRevisionGUID=
-
-[GeneratedDocument8]
-DocumentPath=Outputs\Gerber\Gerber\Gerber\hep-0001.GBL
-DItemRevisionGUID=
-
-[GeneratedDocument9]
-DocumentPath=Outputs\Gerber\Gerber\Gerber\hep-0001.GBS
-DItemRevisionGUID=
-
-[GeneratedDocument10]
-DocumentPath=Outputs\Gerber\Gerber\Gerber\hep-0001.GKO
-DItemRevisionGUID=
-
-[GeneratedDocument11]
-DocumentPath=Outputs\Gerber\Gerber\Gerber\hep-0001.GM11
-DItemRevisionGUID=
-
-[GeneratedDocument12]
-DocumentPath=Outputs\Gerber\Gerber\Gerber\hep-0001.GTL
-DItemRevisionGUID=
-
-[GeneratedDocument13]
-DocumentPath=Outputs\Gerber\Gerber\Gerber\hep-0001.GTO
-DItemRevisionGUID=
-
-[GeneratedDocument14]
-DocumentPath=Outputs\Gerber\Gerber\Gerber\hep-0001.GTP
-DItemRevisionGUID=
-
-[GeneratedDocument15]
-DocumentPath=Outputs\Gerber\Gerber\Gerber\hep-0001.GTS
-DItemRevisionGUID=
-
-[GeneratedDocument16]
-DocumentPath=Outputs\Gerber\Gerber\NC Drill\hep-0001.LDP
-DItemRevisionGUID=
-
-[GeneratedDocument17]
-DocumentPath=Outputs\Gerber\Gerber\Gerber\hep-0001.REP
-DItemRevisionGUID=
-
-[GeneratedDocument18]
-DocumentPath=Outputs\Gerber\Gerber\Gerber\hep-0001.RUL
-DItemRevisionGUID=
-
-[GeneratedDocument19]
-DocumentPath=Outputs\Gerber\Gerber\NC Drill\hep-0001.TXT
-DItemRevisionGUID=
-
-[GeneratedDocument20]
-DocumentPath=Outputs\Assembly\Pick Place\Pick Place for hep-0001.csv
-DItemRevisionGUID=
-
-[GeneratedDocument21]
-DocumentPath=Outputs\Assembly\Pick Place\Pick Place for hep-0001.txt
 DItemRevisionGUID=
 
 [Parameter1]
@@ -447,22 +351,22 @@ OutputDocumentPath10=
 OutputVariantName10=[No Variations]
 OutputDefault10=0
 PageOptions10=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
-OutputType11=PDF3D MBA
-OutputName11=PDF3D MBA
+OutputType11=Harness Layout Drawing Print
+OutputName11=Harness Layout Drawing Prints
 OutputDocumentPath11=
 OutputVariantName11=
 OutputDefault11=0
 PageOptions11=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
-OutputType12=Harness Layout Drawing Print
-OutputName12=Harness Layout Drawing Prints
+OutputType12=Harness Wiring Diagram Print
+OutputName12=Harness Wiring Diagram Prints
 OutputDocumentPath12=
 OutputVariantName12=
 OutputDefault12=0
 PageOptions12=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
-OutputType13=Harness Wiring Diagram Print
-OutputName13=Harness Wiring Diagram Prints
+OutputType13=PCBDrawing
+OutputName13=Draftsman
 OutputDocumentPath13=
-OutputVariantName13=
+OutputVariantName13=[No Variations]
 OutputDefault13=0
 PageOptions13=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
 OutputType14=PCBDrawing
@@ -814,36 +718,26 @@ OutputName6=Export VRML
 OutputDocumentPath6=
 OutputVariantName6=[No Variations]
 OutputDefault6=0
-OutputType7=MBAExportPARASOLID
-OutputName7=Export PARASOLID
+OutputType7=Save As/Export PCB
+OutputName7=Save As/Export PCB
 OutputDocumentPath7=
 OutputVariantName7=
 OutputDefault7=0
-OutputType8=MBAExportSTEP
-OutputName8=Export STEP
+OutputType8=Save As/Export Schematic
+OutputName8=Save As/Export Schematic
 OutputDocumentPath8=
 OutputVariantName8=
 OutputDefault8=0
-OutputType9=Save As/Export PCB
-OutputName9=Save As/Export PCB
+OutputType9=Specctra Design PCB
+OutputName9=Specctra Design PCB
 OutputDocumentPath9=
 OutputVariantName9=
 OutputDefault9=0
-OutputType10=Save As/Export Schematic
-OutputName10=Save As/Export Schematic
+OutputType10=Web ReviewOutputName
+OutputName10=Web Review Data
 OutputDocumentPath10=
 OutputVariantName10=
 OutputDefault10=0
-OutputType11=Specctra Design PCB
-OutputName11=Specctra Design PCB
-OutputDocumentPath11=
-OutputVariantName11=
-OutputDefault11=0
-OutputType12=Web ReviewOutputName
-OutputName12=Web Review Data
-OutputDocumentPath12=
-OutputVariantName12=
-OutputDefault12=0
 
 [OutputGroup10]
 Name=PostProcess Outputs
@@ -977,6 +871,24 @@ Type117=1
 Type118=1
 Type119=1
 Type120=1
+Type121=1
+Type122=1
+Type123=1
+Type124=1
+Type125=1
+Type126=1
+Type127=1
+Type128=1
+Type129=1
+Type130=1
+Type131=1
+Type132=1
+Type133=1
+Type134=1
+Type135=1
+Type136=1
+Type137=1
+Type138=1
 
 [Difference Levels]
 Type1=1
@@ -1047,6 +959,12 @@ Type65=1
 Type66=1
 Type67=1
 Type68=1
+Type69=1
+Type70=1
+Type71=1
+Type72=1
+Type73=1
+Type74=1
 
 [Electrical Rules Check]
 Type1=1
@@ -1168,6 +1086,7 @@ Type116=1
 Type117=2
 Type118=3
 Type119=3
+MultiChannelAlternate=0
 AlternateItemFail=3
 Type122=2
 Type123=1
@@ -1175,6 +1094,32 @@ Type124=1
 Type125=1
 Type126=1
 Type127=1
+Type128=2
+Type129=2
+Type130=2
+Type131=2
+Type132=2
+Type133=2
+Type134=2
+Type135=2
+Type136=2
+Type137=2
+Type138=1
+Type139=1
+Type140=1
+Type141=1
+Type142=1
+Type143=1
+Type144=1
+Type145=1
+Type146=1
+Type147=2
+Type148=2
+Type149=2
+Type150=2
+Type151=2
+Type152=1
+Type153=1
 
 [ERC Connection Matrix]
 L1=NNNNNNNNNNNWNNNWW
