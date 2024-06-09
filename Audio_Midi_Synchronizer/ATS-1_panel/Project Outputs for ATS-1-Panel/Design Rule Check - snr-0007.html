@@ -1,0 +1,443 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+		h1, h2, h3, h4, h5, h6 {
+			font-family : segoe ui;
+			color : black;
+			background-color : #EDE7D9;
+			padding: 0.3em;
+		}
+
+		h1 {
+			font-size: 1.2em;
+		}		
+
+		h2 {
+			font-size: 1.2em;
+		}
+
+		body {
+			font-family : segoe ui;
+		}
+
+		td, th {
+			padding: 0.5em;
+			text-align : left;
+			width: 10em;
+		}
+		th {
+			background-color : #EEEEEE;
+
+		}
+		th.column1, td.column1 {
+			text-align: left;
+			width : auto;
+		}
+		table {
+			width : 100%;
+			font-size: 0.9em;
+		}
+
+		.DRC_summary_header {
+			padding-bottom : 0.1em;
+			border : 0px solid black;
+			width: 100%;
+			align: left;
+		}
+
+		.DRC_summary_header_col1,
+		.DRC_summary_header_col2, 
+		.DRC_summary_header_col3 {
+			color : black;
+			font-size:100%;
+			padding : 0em;
+			padding-top : 0.2em;
+			padding-bottom 0.2em;
+			border : 0px solid black;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.DRC_summary_header_col1 {
+			font-weight: bold;
+			width: 9em;
+		}
+
+		.DRC_summary_header_col2 {
+			width: 0.1em;
+		
+		}
+
+		.DRC_summary_header_col3 {
+			width : auto;
+		}
+
+		.header_holder {
+		    Width = 100%;
+		    border = 0px solid green;
+		    padding = 0;
+		}
+
+
+		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3
+		{
+			left : 0;
+			top : 0;
+			padding: 0em;
+			padding-top : 0.1em;
+			border : 0px solid black;
+			width : 100%;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.front_matter_column1 {
+			width : 8em;
+			font-weight: bold;
+		}
+
+		.front_matter_column2 {
+			width: 0.1em;
+		}
+
+		.front_matter_column3 {
+			width : auto;
+		}
+
+		.total_column1, .total_column {
+			font-weight : bold;
+		}
+		.total_column1 {
+			text-align : left;
+		}
+		.warning, .error {
+			color : red;
+			font-weight : bold;
+		}
+		tr.onmouseout_odd {
+			background-color : #white;
+		}
+		tr.onmouseout_even { 
+			background-color : #FAFAFA;
+		}
+		tr.onmouseover_odd, tr.onmouseover_even { 
+			background-color : #EEEEEE;
+		} 
+		a:link, a:visited, .q a:link,.q a:active,.q {
+			color: #21489e; 
+		}
+		a:link.callback, a:visited.callback { 
+			color: #21489e;
+		}
+		a:link.customize, a:visited.customize {
+			color: #C0C0C0;
+			position: absolute; 
+			right: 10px;
+		}	
+		p.contents_level1 {
+			font-weight : bold;
+			font-size : 110%;
+			margin : 0.5em;
+		}
+		p.contents_level2 {
+			position : relative;
+			left : 20px;
+			margin : 0.5em;
+		}
+	</style><script type="text/javascript">
+		function coordToMils(coord) {
+			var number = coord / 10000;
+			
+			if (number != number.toFixed(3))
+				number = number.toFixed(3);
+
+			return number + 'mil'
+		}
+
+		function coordToMM(coord) {
+			var number = 0.0254 * coord / 10000;
+			
+			if (number != number.toFixed(4))
+				number = number.toFixed(4);
+			
+			return number + 'mm'
+		}
+	
+		function convertCoord(coordNode, units) {
+			for (var i = 0; i < coordNode.childNodes.length; i++) {
+				coordNode.removeChild(coordNode.childNodes[i]);
+			}
+
+			var coord = coordNode.getAttribute('value');
+			if (coord != null) {
+				if (units == 'mm') {
+					textNode = document.createTextNode(coordToMM(coord));
+					coordNode.appendChild(textNode);
+				} else if (units == 'mil') {
+					textNode = document.createTextNode(coordToMils(coord));		
+					coordNode.appendChild(textNode);	
+				}
+			}
+		}
+	
+		function convertUnits(unitNode, units) {
+			for (var i = 0; i < unitNode.childNodes.length; i++) {
+				unitNode.removeChild(unitNode.childNodes[i]);		
+			}
+		
+			textNode = document.createTextNode(units); 
+			unitNode.appendChild(textNode);
+		}
+	
+		function changeUnits(radio_input, units) {
+			if (radio_input.checked) {
+			
+				var elements = document.getElementsByName('coordinate');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertCoord(elements[i], units);
+					}
+				}
+	
+				var elements = document.getElementsByName('units');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertUnits(elements[i], units);
+					}
+				}
+			}
+		}
+	</script><title>Design Rule Verification Report</title>
+</head>
+<body onload=""><img ALT="Altium" src="
+			file://C:\Users\Public\Documents\Altium\AD23\Templates\AD_logo.png
+		"><h1>Design Rule Verification Report</h1>
+<table class="header_holder">
+<td class="column1">
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">09.06.2024</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">14:46:09</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Elapsed Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">00:00:01</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Filename:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3"><a href="file:///D:\GoogleDrive\Entwicklung\Circuitstudio_Workspace\Open_Hardware\Open_Hardware\Audio_Midi_Synchronizer\ATS-1_panel\snr-0007.PcbDoc" class="file"><acronym title="D:\GoogleDrive\Entwicklung\Circuitstudio_Workspace\Open_Hardware\Open_Hardware\Audio_Midi_Synchronizer\ATS-1_panel\snr-0007.PcbDoc">D:\GoogleDrive\Entwicklung\Circuitstudio_Workspace\Open_Hardware\Open_Hardware\Audio_Midi_Synchronizer\ATS-1_panel\snr-0007.PcbDoc</acronym></a></td>
+</tr>
+</table>
+</td>
+<td class="column2">
+<table class="DRC_summary_header">
+<tr>
+<td class="DRC_summary_header_col1">Warnings:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3">0</td></tr>
+<tr>
+<td class="DRC_summary_header_col1">Rule Violations:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3" style="color : red">30</td></tr>
+</table>
+</td>
+</table><a name="IDNK2ACRDVOYWNLN30BTHSK5HR5JWKQTKGXSJHPUCSNOOEP1DXC3ZM"><h2>Summary</h2></a><table>
+<tr>
+<th class="column1">Warnings</th>
+<th class="column2">Count</th>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">0</td>
+</tr>
+</table><br><table>
+<tr>
+<th class="column1">Rule Violations</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDSKCMGE0WKDQWCN04C2E5PMRDYMAKGG0USBZJF0MOUGJOEVSX0ZYI">Clearance Constraint (Gap=0.254mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDXKNSQLYOLIMRGZJQHOFJC4IY1D505NGQCHV1VZCKJSUVNVNKVB1I">Short-Circuit Constraint (Allowed=No) (All),(All)</a></td>
+<td class="column2">4</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDM1SIQUSCGGJDEVE1QL03OVWS0JZRCARWOQBFFAELGFP21UKZFTOL">Un-Routed Net Constraint ( (All) )</a></td>
+<td class="column2">2</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDZLWAEUUO0YA2CSKAQ01FKXQVRJI54GOKEM5O5HNXVVPX3ZJ0SGMP">Modified Polygon (Allow modified: No), (Allow shelved: No)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDOJR1SUROR1XSHXLVUMIU1GDTBLHN2JBGMFPAPAJ5AAPQCYTL1HSE">Width Constraint (Min=0.254mm) (Max=0.254mm) (Preferred=0.254mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDZIKO33XQXPJLJWBCDTOUOJFSUGLLZQOLQT5ZCRDATVV3LS0INEDH">Power Plane Connect Rule(Relief Connect )(Expansion=0.508mm) (Conductor Width=0.254mm) (Air Gap=0.254mm) (Entries=4) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDYJ254O23HJENCZNSH1UGLSJEAODTTIN3XLEILFXQGPMXTQRWMVI">Hole Size Constraint (Min=0.025mm) (Max=2.54mm) (All)</a></td>
+<td class="column2">11</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDJL4Y4OBRE3E0H30SGBAITVK05IYBNV4GQSUMG0ERTFWMPYSMYDIC">Hole To Hole Clearance (Gap=0.254mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDNLPB5K3QTZEDVJMDMNCR5TFSIZNT4OCJ2YXBFFNUMFWMJGSL31C">Minimum Solder Mask Sliver (Gap=0.254mm) (All),(All)</a></td>
+<td class="column2">1</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDHVRVRHL15LBMMEEIHLIEHB1LCMAM4MJLPUQNVCH5VHN3IKN5HENK">Silk To Solder Mask (Clearance=0.254mm) (IsPad),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDYJPBBX4IMAAHJOC33REE3SZASDALDNQV2V4XTJHQ1N2UAP2JIKJJ">Silk to Silk (Clearance=0.254mm) (All),(All)</a></td>
+<td class="column2">1</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDZSIYCSS45HE2VE3QGKB1UMQDMJ32FAFOZ13YWB1H4AUEGBXRDZJ">Net Antennae (Tolerance=0mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDKZFKE5MUEKRLGG2S15TQQ0G5DICCNDVLOALNHELSNHHMESGJRG4F">Room ATS-1-Panel (Bounding Region = (162.5mm, 27mm, 192mm, 33.5mm) (InComponentClass('ATS-1-Panel'))</a></td>
+<td class="column2">11</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDMEBDAWIQXR1SCZSMX0QYLXJPCG3HQI2J4PN2IDEBUD5CEAPZ1UIE">Height Constraint (Min=0mm) (Max=25.4mm) (Prefered=12.7mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">30</td>
+</tr>
+</table><br><a name="IDXKNSQLYOLIMRGZJQHOFJC4IY1D505NGQCHV1VZCKJSUVNVNKVB1I"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Short-Circuit Constraint (Allowed=No) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\GoogleDrive\Entwicklung\Circuitstudio_Workspace\Open_Hardware\Open_Hardware\Audio_Midi_Synchronizer\ATS-1_panel\snr-0007.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3337.26mil|Location2.X=3513.133mil|Location1.Y=2077.418mil|Location2.Y=2253.291mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\GoogleDrive\Entwicklung\Circuitstudio_Workspace\Open_Hardware\Open_Hardware\Audio_Midi_Synchronizer\ATS-1_panel\snr-0007.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3337.26mil|Location2.X=3513.133mil|Location1.Y=2077.418mil|Location2.Y=2253.291mil|Absolute=True">Short-Circuit Constraint: Between Pad NPN10-8(64mm,30mm) on Multi-Layer And Polygon Region (8 hole(s)) Bottom Layer Location : [X = 87mm][Y = 55mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\GoogleDrive\Entwicklung\Circuitstudio_Workspace\Open_Hardware\Open_Hardware\Audio_Midi_Synchronizer\ATS-1_panel\snr-0007.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3337.26mil|Location2.X=3513.133mil|Location1.Y=2077.418mil|Location2.Y=2253.291mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\GoogleDrive\Entwicklung\Circuitstudio_Workspace\Open_Hardware\Open_Hardware\Audio_Midi_Synchronizer\ATS-1_panel\snr-0007.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3337.26mil|Location2.X=3513.133mil|Location1.Y=2077.418mil|Location2.Y=2253.291mil|Absolute=True">Short-Circuit Constraint: Between Pad NPN10-8(64mm,30mm) on Multi-Layer And Polygon Region (8 hole(s)) Top Layer Location : [X = 87mm][Y = 55mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\GoogleDrive\Entwicklung\Circuitstudio_Workspace\Open_Hardware\Open_Hardware\Audio_Midi_Synchronizer\ATS-1_panel\snr-0007.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6250.646mil|Location2.X=6426.519mil|Location1.Y=1762.457mil|Location2.Y=1938.33mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\GoogleDrive\Entwicklung\Circuitstudio_Workspace\Open_Hardware\Open_Hardware\Audio_Midi_Synchronizer\ATS-1_panel\snr-0007.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6250.646mil|Location2.X=6426.519mil|Location1.Y=1762.457mil|Location2.Y=1938.33mil|Absolute=True">Short-Circuit Constraint: Between Pad NPN11-8(138mm,22mm) on Multi-Layer And Polygon Region (8 hole(s)) Bottom Layer Location : [X = 161mm][Y = 47mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\GoogleDrive\Entwicklung\Circuitstudio_Workspace\Open_Hardware\Open_Hardware\Audio_Midi_Synchronizer\ATS-1_panel\snr-0007.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6250.646mil|Location2.X=6426.519mil|Location1.Y=1762.457mil|Location2.Y=1938.33mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\GoogleDrive\Entwicklung\Circuitstudio_Workspace\Open_Hardware\Open_Hardware\Audio_Midi_Synchronizer\ATS-1_panel\snr-0007.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6250.646mil|Location2.X=6426.519mil|Location1.Y=1762.457mil|Location2.Y=1938.33mil|Absolute=True">Short-Circuit Constraint: Between Pad NPN11-8(138mm,22mm) on Multi-Layer And Polygon Region (8 hole(s)) Top Layer Location : [X = 161mm][Y = 47mm]</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDM1SIQUSCGGJDEVE1QL03OVWS0JZRCARWOQBFFAELGFP21UKZFTOL"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Un-Routed Net Constraint ( (All) )</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\GoogleDrive\Entwicklung\Circuitstudio_Workspace\Open_Hardware\Open_Hardware\Audio_Midi_Synchronizer\ATS-1_panel\snr-0007.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=925.197mil|Location2.X=6791.339mil|Location1.Y=1003.937mil|Location2.Y=2992.126mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\GoogleDrive\Entwicklung\Circuitstudio_Workspace\Open_Hardware\Open_Hardware\Audio_Midi_Synchronizer\ATS-1_panel\snr-0007.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=925.197mil|Location2.X=6791.339mil|Location1.Y=1003.937mil|Location2.Y=2992.126mil|Absolute=True">Un-Routed Net Constraint: Polygon  (NONET_L01_P000) on Top Layer Dead Copper - Net Not Assigned.</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\GoogleDrive\Entwicklung\Circuitstudio_Workspace\Open_Hardware\Open_Hardware\Audio_Midi_Synchronizer\ATS-1_panel\snr-0007.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=925.197mil|Location2.X=6791.338mil|Location1.Y=1003.937mil|Location2.Y=2992.126mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\GoogleDrive\Entwicklung\Circuitstudio_Workspace\Open_Hardware\Open_Hardware\Audio_Midi_Synchronizer\ATS-1_panel\snr-0007.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=925.197mil|Location2.X=6791.338mil|Location1.Y=1003.937mil|Location2.Y=2992.126mil|Absolute=True">Un-Routed Net Constraint: Polygon  (NONET_L02_P001) on Bottom Layer Dead Copper - Net Not Assigned.</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDYJ254O23HJENCZNSH1UGLSJEAODTTIN3XLEILFXQGPMXTQRWMVI"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Hole Size Constraint (Min=0.025mm) (Max=2.54mm) (All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\GoogleDrive\Entwicklung\Circuitstudio_Workspace\Open_Hardware\Open_Hardware\Audio_Midi_Synchronizer\ATS-1_panel\snr-0007.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3363.548mil|Location2.X=3486.845mil|Location1.Y=2103.706mil|Location2.Y=2227.003mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\GoogleDrive\Entwicklung\Circuitstudio_Workspace\Open_Hardware\Open_Hardware\Audio_Midi_Synchronizer\ATS-1_panel\snr-0007.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3363.548mil|Location2.X=3486.845mil|Location1.Y=2103.706mil|Location2.Y=2227.003mil|Absolute=True">Hole Size Constraint: (3.1mm &gt; 2.54mm) Pad NPN10-8(64mm,30mm) on Multi-Layer Actual Hole Size = 3.1mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\GoogleDrive\Entwicklung\Circuitstudio_Workspace\Open_Hardware\Open_Hardware\Audio_Midi_Synchronizer\ATS-1_panel\snr-0007.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6276.934mil|Location2.X=6400.231mil|Location1.Y=1788.745mil|Location2.Y=1912.042mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\GoogleDrive\Entwicklung\Circuitstudio_Workspace\Open_Hardware\Open_Hardware\Audio_Midi_Synchronizer\ATS-1_panel\snr-0007.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6276.934mil|Location2.X=6400.231mil|Location1.Y=1788.745mil|Location2.Y=1912.042mil|Absolute=True">Hole Size Constraint: (3.1mm &gt; 2.54mm) Pad NPN11-8(138mm,22mm) on Multi-Layer Actual Hole Size = 3.1mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\GoogleDrive\Entwicklung\Circuitstudio_Workspace\Open_Hardware\Open_Hardware\Audio_Midi_Synchronizer\ATS-1_panel\snr-0007.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5135.202mil|Location2.X=5258.499mil|Location1.Y=1788.745mil|Location2.Y=1912.042mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\GoogleDrive\Entwicklung\Circuitstudio_Workspace\Open_Hardware\Open_Hardware\Audio_Midi_Synchronizer\ATS-1_panel\snr-0007.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5135.202mil|Location2.X=5258.499mil|Location1.Y=1788.745mil|Location2.Y=1912.042mil|Absolute=True">Hole Size Constraint: (3.1mm &gt; 2.54mm) Pad NPN1-8(109mm,22mm) on Multi-Layer Actual Hole Size = 3.1mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\GoogleDrive\Entwicklung\Circuitstudio_Workspace\Open_Hardware\Open_Hardware\Audio_Midi_Synchronizer\ATS-1_panel\snr-0007.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5902.918mil|Location2.X=6026.216mil|Location1.Y=1788.745mil|Location2.Y=1912.042mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\GoogleDrive\Entwicklung\Circuitstudio_Workspace\Open_Hardware\Open_Hardware\Audio_Midi_Synchronizer\ATS-1_panel\snr-0007.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5902.918mil|Location2.X=6026.216mil|Location1.Y=1788.745mil|Location2.Y=1912.042mil|Absolute=True">Hole Size Constraint: (3.1mm &gt; 2.54mm) Pad NPN2-8(128.5mm,22mm) on Multi-Layer Actual Hole Size = 3.1mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\GoogleDrive\Entwicklung\Circuitstudio_Workspace\Open_Hardware\Open_Hardware\Audio_Midi_Synchronizer\ATS-1_panel\snr-0007.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6353.706mil|Location2.X=6480.94mil|Location1.Y=1314.336mil|Location2.Y=1441.57mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\GoogleDrive\Entwicklung\Circuitstudio_Workspace\Open_Hardware\Open_Hardware\Audio_Midi_Synchronizer\ATS-1_panel\snr-0007.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6353.706mil|Location2.X=6480.94mil|Location1.Y=1314.336mil|Location2.Y=1441.57mil|Absolute=True">Hole Size Constraint: (3.2mm &gt; 2.54mm) Pad NPN3-8(140mm,10mm) on Multi-Layer Actual Hole Size = 3.2mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\GoogleDrive\Entwicklung\Circuitstudio_Workspace\Open_Hardware\Open_Hardware\Audio_Midi_Synchronizer\ATS-1_panel\snr-0007.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6353.706mil|Location2.X=6480.94mil|Location1.Y=2731.659mil|Location2.Y=2858.893mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\GoogleDrive\Entwicklung\Circuitstudio_Workspace\Open_Hardware\Open_Hardware\Audio_Midi_Synchronizer\ATS-1_panel\snr-0007.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6353.706mil|Location2.X=6480.94mil|Location1.Y=2731.659mil|Location2.Y=2858.893mil|Absolute=True">Hole Size Constraint: (3.2mm &gt; 2.54mm) Pad NPN4-8(140mm,46mm) on Multi-Layer Actual Hole Size = 3.2mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\GoogleDrive\Entwicklung\Circuitstudio_Workspace\Open_Hardware\Open_Hardware\Audio_Midi_Synchronizer\ATS-1_panel\snr-0007.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5461.973mil|Location2.X=5758.499mil|Location1.Y=1426.54mil|Location2.Y=1723.066mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\GoogleDrive\Entwicklung\Circuitstudio_Workspace\Open_Hardware\Open_Hardware\Audio_Midi_Synchronizer\ATS-1_panel\snr-0007.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5461.973mil|Location2.X=5758.499mil|Location1.Y=1426.54mil|Location2.Y=1723.066mil|Absolute=True">Hole Size Constraint: (7.5mm &gt; 2.54mm) Pad NPN5-1(119.5mm,15mm) on Multi-Layer Actual Hole Size = 7.5mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\GoogleDrive\Entwicklung\Circuitstudio_Workspace\Open_Hardware\Open_Hardware\Audio_Midi_Synchronizer\ATS-1_panel\snr-0007.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4694.257mil|Location2.X=4990.783mil|Location1.Y=1426.54mil|Location2.Y=1723.066mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\GoogleDrive\Entwicklung\Circuitstudio_Workspace\Open_Hardware\Open_Hardware\Audio_Midi_Synchronizer\ATS-1_panel\snr-0007.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4694.257mil|Location2.X=4990.783mil|Location1.Y=1426.54mil|Location2.Y=1723.066mil|Absolute=True">Hole Size Constraint: (7.5mm &gt; 2.54mm) Pad NPN6-1(100mm,15mm) on Multi-Layer Actual Hole Size = 7.5mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\GoogleDrive\Entwicklung\Circuitstudio_Workspace\Open_Hardware\Open_Hardware\Audio_Midi_Synchronizer\ATS-1_panel\snr-0007.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1235.595mil|Location2.X=1362.83mil|Location1.Y=1314.336mil|Location2.Y=1441.57mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\GoogleDrive\Entwicklung\Circuitstudio_Workspace\Open_Hardware\Open_Hardware\Audio_Midi_Synchronizer\ATS-1_panel\snr-0007.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1235.595mil|Location2.X=1362.83mil|Location1.Y=1314.336mil|Location2.Y=1441.57mil|Absolute=True">Hole Size Constraint: (3.2mm &gt; 2.54mm) Pad NPN7-8(10mm,10mm) on Multi-Layer Actual Hole Size = 3.2mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\GoogleDrive\Entwicklung\Circuitstudio_Workspace\Open_Hardware\Open_Hardware\Audio_Midi_Synchronizer\ATS-1_panel\snr-0007.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1235.595mil|Location2.X=1362.83mil|Location1.Y=2101.737mil|Location2.Y=2228.972mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\GoogleDrive\Entwicklung\Circuitstudio_Workspace\Open_Hardware\Open_Hardware\Audio_Midi_Synchronizer\ATS-1_panel\snr-0007.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1235.595mil|Location2.X=1362.83mil|Location1.Y=2101.737mil|Location2.Y=2228.972mil|Absolute=True">Hole Size Constraint: (3.2mm &gt; 2.54mm) Pad NPN8-8(10mm,30mm) on Multi-Layer Actual Hole Size = 3.2mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\GoogleDrive\Entwicklung\Circuitstudio_Workspace\Open_Hardware\Open_Hardware\Audio_Midi_Synchronizer\ATS-1_panel\snr-0007.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6867.471mil|Location2.X=6990.769mil|Location1.Y=1052.522mil|Location2.Y=1175.82mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\GoogleDrive\Entwicklung\Circuitstudio_Workspace\Open_Hardware\Open_Hardware\Audio_Midi_Synchronizer\ATS-1_panel\snr-0007.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6867.471mil|Location2.X=6990.769mil|Location1.Y=1052.522mil|Location2.Y=1175.82mil|Absolute=True">Hole Size Constraint: (3.1mm &gt; 2.54mm) Pad NPN9-8(153mm,3.3mm) on Multi-Layer Actual Hole Size = 3.1mm</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDNLPB5K3QTZEDVJMDMNCR5TFSIZNT4OCJ2YXBFFNUMFWMJGSL31C"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Minimum Solder Mask Sliver (Gap=0.254mm) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\GoogleDrive\Entwicklung\Circuitstudio_Workspace\Open_Hardware\Open_Hardware\Audio_Midi_Synchronizer\ATS-1_panel\snr-0007.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6136.107mil|Location2.X=6147.357mil|Location1.Y=2599.186mil|Location2.Y=2610.436mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\GoogleDrive\Entwicklung\Circuitstudio_Workspace\Open_Hardware\Open_Hardware\Audio_Midi_Synchronizer\ATS-1_panel\snr-0007.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6136.107mil|Location2.X=6147.357mil|Location1.Y=2599.186mil|Location2.Y=2610.436mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.124mm &lt; 0.254mm) Between Track (132.424mm,42mm)(133mm,41.424mm) on Top Solder And Track (23.5mm,41mm)(134mm,41mm) on Top Solder [Top Solder] Mask Sliver [0.124mm]</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDYJPBBX4IMAAHJOC33REE3SZASDALDNQV2V4XTJHQ1N2UAP2JIKJJ"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Silk to Silk (Clearance=0.254mm) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\GoogleDrive\Entwicklung\Circuitstudio_Workspace\Open_Hardware\Open_Hardware\Audio_Midi_Synchronizer\ATS-1_panel\snr-0007.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3366.167mil|Location2.X=3373.833mil|Location1.Y=2271.268mil|Location2.Y=2278.935mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\GoogleDrive\Entwicklung\Circuitstudio_Workspace\Open_Hardware\Open_Hardware\Audio_Midi_Synchronizer\ATS-1_panel\snr-0007.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3366.167mil|Location2.X=3373.833mil|Location1.Y=2271.268mil|Location2.Y=2278.935mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0.254mm) Between Text "NPN10" (62.598mm,32.404mm) on Top Overlay And Text "Trigger
+" (60mm,32.5mm) on Top Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDKZFKE5MUEKRLGG2S15TQQ0G5DICCNDVLOALNHELSNHHMESGJRG4F"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Room ATS-1-Panel (Bounding Region = (162.5mm, 27mm, 192mm, 33.5mm) (InComponentClass('ATS-1-Panel'))</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\GoogleDrive\Entwicklung\Circuitstudio_Workspace\Open_Hardware\Open_Hardware\Audio_Midi_Synchronizer\ATS-1_panel\snr-0007.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3360.173mil|Location2.X=7559.04mil|Location1.Y=1062.99mil|Location2.Y=2230.378mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\GoogleDrive\Entwicklung\Circuitstudio_Workspace\Open_Hardware\Open_Hardware\Audio_Midi_Synchronizer\ATS-1_panel\snr-0007.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3360.173mil|Location2.X=7559.04mil|Location1.Y=1062.99mil|Location2.Y=2230.378mil|Absolute=True">Room Definition: Between Room ATS-1-Panel (Bounding Region = (162.5mm, 27mm, 192mm, 33.5mm) (InComponentClass('ATS-1-Panel')) And Small Component NPN10-NPN_3.1mm (160.5mm,4mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\GoogleDrive\Entwicklung\Circuitstudio_Workspace\Open_Hardware\Open_Hardware\Audio_Midi_Synchronizer\ATS-1_panel\snr-0007.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6273.559mil|Location2.X=7559.04mil|Location1.Y=1062.99mil|Location2.Y=1915.417mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\GoogleDrive\Entwicklung\Circuitstudio_Workspace\Open_Hardware\Open_Hardware\Audio_Midi_Synchronizer\ATS-1_panel\snr-0007.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6273.559mil|Location2.X=7559.04mil|Location1.Y=1062.99mil|Location2.Y=1915.417mil|Absolute=True">Room Definition: Between Room ATS-1-Panel (Bounding Region = (162.5mm, 27mm, 192mm, 33.5mm) (InComponentClass('ATS-1-Panel')) And Small Component NPN11-NPN_3.1mm (153mm,4mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\GoogleDrive\Entwicklung\Circuitstudio_Workspace\Open_Hardware\Open_Hardware\Audio_Midi_Synchronizer\ATS-1_panel\snr-0007.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5131.827mil|Location2.X=7559.04mil|Location1.Y=1062.99mil|Location2.Y=1915.417mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\GoogleDrive\Entwicklung\Circuitstudio_Workspace\Open_Hardware\Open_Hardware\Audio_Midi_Synchronizer\ATS-1_panel\snr-0007.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5131.827mil|Location2.X=7559.04mil|Location1.Y=1062.99mil|Location2.Y=1915.417mil|Absolute=True">Room Definition: Between Room ATS-1-Panel (Bounding Region = (162.5mm, 27mm, 192mm, 33.5mm) (InComponentClass('ATS-1-Panel')) And Small Component NPN1-NPN_3.1mm (109mm,22mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\GoogleDrive\Entwicklung\Circuitstudio_Workspace\Open_Hardware\Open_Hardware\Audio_Midi_Synchronizer\ATS-1_panel\snr-0007.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5899.543mil|Location2.X=7559.04mil|Location1.Y=1062.99mil|Location2.Y=1915.417mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\GoogleDrive\Entwicklung\Circuitstudio_Workspace\Open_Hardware\Open_Hardware\Audio_Midi_Synchronizer\ATS-1_panel\snr-0007.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5899.543mil|Location2.X=7559.04mil|Location1.Y=1062.99mil|Location2.Y=1915.417mil|Absolute=True">Room Definition: Between Room ATS-1-Panel (Bounding Region = (162.5mm, 27mm, 192mm, 33.5mm) (InComponentClass('ATS-1-Panel')) And Small Component NPN2-NPN_3.1mm (128.5mm,22mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\GoogleDrive\Entwicklung\Circuitstudio_Workspace\Open_Hardware\Open_Hardware\Audio_Midi_Synchronizer\ATS-1_panel\snr-0007.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6350.331mil|Location2.X=7559.04mil|Location1.Y=1062.99mil|Location2.Y=1444.945mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\GoogleDrive\Entwicklung\Circuitstudio_Workspace\Open_Hardware\Open_Hardware\Audio_Midi_Synchronizer\ATS-1_panel\snr-0007.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6350.331mil|Location2.X=7559.04mil|Location1.Y=1062.99mil|Location2.Y=1444.945mil|Absolute=True">Room Definition: Between Room ATS-1-Panel (Bounding Region = (162.5mm, 27mm, 192mm, 33.5mm) (InComponentClass('ATS-1-Panel')) And Small Component NPN3-NPN_3.2mm (134.5mm,7mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\GoogleDrive\Entwicklung\Circuitstudio_Workspace\Open_Hardware\Open_Hardware\Audio_Midi_Synchronizer\ATS-1_panel\snr-0007.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6350.331mil|Location2.X=7559.04mil|Location1.Y=1062.99mil|Location2.Y=2862.268mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\GoogleDrive\Entwicklung\Circuitstudio_Workspace\Open_Hardware\Open_Hardware\Audio_Midi_Synchronizer\ATS-1_panel\snr-0007.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6350.331mil|Location2.X=7559.04mil|Location1.Y=1062.99mil|Location2.Y=2862.268mil|Absolute=True">Room Definition: Between Room ATS-1-Panel (Bounding Region = (162.5mm, 27mm, 192mm, 33.5mm) (InComponentClass('ATS-1-Panel')) And Small Component NPN4-NPN_3.2mm (134.5mm,41.5mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\GoogleDrive\Entwicklung\Circuitstudio_Workspace\Open_Hardware\Open_Hardware\Audio_Midi_Synchronizer\ATS-1_panel\snr-0007.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5458.598mil|Location2.X=7559.04mil|Location1.Y=1062.99mil|Location2.Y=1726.441mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\GoogleDrive\Entwicklung\Circuitstudio_Workspace\Open_Hardware\Open_Hardware\Audio_Midi_Synchronizer\ATS-1_panel\snr-0007.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5458.598mil|Location2.X=7559.04mil|Location1.Y=1062.99mil|Location2.Y=1726.441mil|Absolute=True">Room Definition: Between Room ATS-1-Panel (Bounding Region = (162.5mm, 27mm, 192mm, 33.5mm) (InComponentClass('ATS-1-Panel')) And Small Component NPN5-NPN_7.5mm (119.5mm,15mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\GoogleDrive\Entwicklung\Circuitstudio_Workspace\Open_Hardware\Open_Hardware\Audio_Midi_Synchronizer\ATS-1_panel\snr-0007.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4690.882mil|Location2.X=7559.04mil|Location1.Y=1062.99mil|Location2.Y=1726.441mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\GoogleDrive\Entwicklung\Circuitstudio_Workspace\Open_Hardware\Open_Hardware\Audio_Midi_Synchronizer\ATS-1_panel\snr-0007.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4690.882mil|Location2.X=7559.04mil|Location1.Y=1062.99mil|Location2.Y=1726.441mil|Absolute=True">Room Definition: Between Room ATS-1-Panel (Bounding Region = (162.5mm, 27mm, 192mm, 33.5mm) (InComponentClass('ATS-1-Panel')) And Small Component NPN6-NPN_7.5mm (100mm,15mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\GoogleDrive\Entwicklung\Circuitstudio_Workspace\Open_Hardware\Open_Hardware\Audio_Midi_Synchronizer\ATS-1_panel\snr-0007.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1232.22mil|Location2.X=7559.04mil|Location1.Y=1062.99mil|Location2.Y=1444.945mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\GoogleDrive\Entwicklung\Circuitstudio_Workspace\Open_Hardware\Open_Hardware\Audio_Midi_Synchronizer\ATS-1_panel\snr-0007.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1232.22mil|Location2.X=7559.04mil|Location1.Y=1062.99mil|Location2.Y=1444.945mil|Absolute=True">Room Definition: Between Room ATS-1-Panel (Bounding Region = (162.5mm, 27mm, 192mm, 33.5mm) (InComponentClass('ATS-1-Panel')) And Small Component NPN7-NPN_3.2mm (7.5mm,7mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\GoogleDrive\Entwicklung\Circuitstudio_Workspace\Open_Hardware\Open_Hardware\Audio_Midi_Synchronizer\ATS-1_panel\snr-0007.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1232.22mil|Location2.X=7559.04mil|Location1.Y=1062.99mil|Location2.Y=2232.347mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\GoogleDrive\Entwicklung\Circuitstudio_Workspace\Open_Hardware\Open_Hardware\Audio_Midi_Synchronizer\ATS-1_panel\snr-0007.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1232.22mil|Location2.X=7559.04mil|Location1.Y=1062.99mil|Location2.Y=2232.347mil|Absolute=True">Room Definition: Between Room ATS-1-Panel (Bounding Region = (162.5mm, 27mm, 192mm, 33.5mm) (InComponentClass('ATS-1-Panel')) And Small Component NPN8-NPN_3.2mm (7.5mm,41.5mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\GoogleDrive\Entwicklung\Circuitstudio_Workspace\Open_Hardware\Open_Hardware\Audio_Midi_Synchronizer\ATS-1_panel\snr-0007.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6397.625mil|Location2.X=7559.04mil|Location1.Y=1049.147mil|Location2.Y=1318.895mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\GoogleDrive\Entwicklung\Circuitstudio_Workspace\Open_Hardware\Open_Hardware\Audio_Midi_Synchronizer\ATS-1_panel\snr-0007.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6397.625mil|Location2.X=7559.04mil|Location1.Y=1049.147mil|Location2.Y=1318.895mil|Absolute=True">Room Definition: Between Room ATS-1-Panel (Bounding Region = (162.5mm, 27mm, 192mm, 33.5mm) (InComponentClass('ATS-1-Panel')) And Small Component NPN9-NPN_3.1mm (153mm,3.3mm) on Top Layer </acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br></body>
+</html>

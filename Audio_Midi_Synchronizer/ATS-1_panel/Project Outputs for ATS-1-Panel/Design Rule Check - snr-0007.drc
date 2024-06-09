@@ -1,0 +1,82 @@
+Protel Design System Design Rule Check
+PCB File : D:\GoogleDrive\Entwicklung\Circuitstudio_Workspace\Open_Hardware\Open_Hardware\Audio_Midi_Synchronizer\ATS-1_panel\snr-0007.PcbDoc
+Date     : 09.06.2024
+Time     : 14:46:09
+
+Processing Rule : Clearance Constraint (Gap=0.254mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
+   Violation between Short-Circuit Constraint: Between Pad NPN10-8(64mm,30mm) on Multi-Layer And Polygon Region (8 hole(s)) Bottom Layer Location : [X = 87mm][Y = 55mm]
+   Violation between Short-Circuit Constraint: Between Pad NPN10-8(64mm,30mm) on Multi-Layer And Polygon Region (8 hole(s)) Top Layer Location : [X = 87mm][Y = 55mm]
+   Violation between Short-Circuit Constraint: Between Pad NPN11-8(138mm,22mm) on Multi-Layer And Polygon Region (8 hole(s)) Bottom Layer Location : [X = 161mm][Y = 47mm]
+   Violation between Short-Circuit Constraint: Between Pad NPN11-8(138mm,22mm) on Multi-Layer And Polygon Region (8 hole(s)) Top Layer Location : [X = 161mm][Y = 47mm]
+Rule Violations :4
+
+Processing Rule : Un-Routed Net Constraint ( (All) )
+   Violation between Un-Routed Net Constraint: Polygon  (NONET_L01_P000) on Top Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Polygon  (NONET_L02_P001) on Bottom Layer Dead Copper - Net Not Assigned.
+Rule Violations :2
+
+Processing Rule : Modified Polygon (Allow modified: No), (Allow shelved: No)
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=0.254mm) (Max=0.254mm) (Preferred=0.254mm) (All)
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=0.508mm) (Conductor Width=0.254mm) (Air Gap=0.254mm) (Entries=4) (All)
+Rule Violations :0
+
+Processing Rule : Hole Size Constraint (Min=0.025mm) (Max=2.54mm) (All)
+   Violation between Hole Size Constraint: (3.1mm > 2.54mm) Pad NPN10-8(64mm,30mm) on Multi-Layer Actual Hole Size = 3.1mm
+   Violation between Hole Size Constraint: (3.1mm > 2.54mm) Pad NPN11-8(138mm,22mm) on Multi-Layer Actual Hole Size = 3.1mm
+   Violation between Hole Size Constraint: (3.1mm > 2.54mm) Pad NPN1-8(109mm,22mm) on Multi-Layer Actual Hole Size = 3.1mm
+   Violation between Hole Size Constraint: (3.1mm > 2.54mm) Pad NPN2-8(128.5mm,22mm) on Multi-Layer Actual Hole Size = 3.1mm
+   Violation between Hole Size Constraint: (3.2mm > 2.54mm) Pad NPN3-8(140mm,10mm) on Multi-Layer Actual Hole Size = 3.2mm
+   Violation between Hole Size Constraint: (3.2mm > 2.54mm) Pad NPN4-8(140mm,46mm) on Multi-Layer Actual Hole Size = 3.2mm
+   Violation between Hole Size Constraint: (7.5mm > 2.54mm) Pad NPN5-1(119.5mm,15mm) on Multi-Layer Actual Hole Size = 7.5mm
+   Violation between Hole Size Constraint: (7.5mm > 2.54mm) Pad NPN6-1(100mm,15mm) on Multi-Layer Actual Hole Size = 7.5mm
+   Violation between Hole Size Constraint: (3.2mm > 2.54mm) Pad NPN7-8(10mm,10mm) on Multi-Layer Actual Hole Size = 3.2mm
+   Violation between Hole Size Constraint: (3.2mm > 2.54mm) Pad NPN8-8(10mm,30mm) on Multi-Layer Actual Hole Size = 3.2mm
+   Violation between Hole Size Constraint: (3.1mm > 2.54mm) Pad NPN9-8(153mm,3.3mm) on Multi-Layer Actual Hole Size = 3.1mm
+Rule Violations :11
+
+Processing Rule : Hole To Hole Clearance (Gap=0.254mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Minimum Solder Mask Sliver (Gap=0.254mm) (All),(All)
+   Violation between Minimum Solder Mask Sliver Constraint: (0.124mm < 0.254mm) Between Track (132.424mm,42mm)(133mm,41.424mm) on Top Solder And Track (23.5mm,41mm)(134mm,41mm) on Top Solder [Top Solder] Mask Sliver [0.124mm]
+Rule Violations :1
+
+Processing Rule : Silk To Solder Mask (Clearance=0.254mm) (IsPad),(All)
+Rule Violations :0
+
+Processing Rule : Silk to Silk (Clearance=0.254mm) (All),(All)
+   Violation between Silk To Silk Clearance Constraint: (Collision < 0.254mm) Between Text "NPN10" (62.598mm,32.404mm) on Top Overlay And Text "Trigger
+" (60mm,32.5mm) on Top Overlay Silk Text to Silk Clearance [0mm]
+Rule Violations :1
+
+Processing Rule : Net Antennae (Tolerance=0mm) (All)
+Rule Violations :0
+
+Processing Rule : Room ATS-1-Panel (Bounding Region = (162.5mm, 27mm, 192mm, 33.5mm) (InComponentClass('ATS-1-Panel'))
+   Violation between Room Definition: Between Room ATS-1-Panel (Bounding Region = (162.5mm, 27mm, 192mm, 33.5mm) (InComponentClass('ATS-1-Panel')) And Small Component NPN10-NPN_3.1mm (160.5mm,4mm) on Top Layer 
+   Violation between Room Definition: Between Room ATS-1-Panel (Bounding Region = (162.5mm, 27mm, 192mm, 33.5mm) (InComponentClass('ATS-1-Panel')) And Small Component NPN11-NPN_3.1mm (153mm,4mm) on Top Layer 
+   Violation between Room Definition: Between Room ATS-1-Panel (Bounding Region = (162.5mm, 27mm, 192mm, 33.5mm) (InComponentClass('ATS-1-Panel')) And Small Component NPN1-NPN_3.1mm (109mm,22mm) on Top Layer 
+   Violation between Room Definition: Between Room ATS-1-Panel (Bounding Region = (162.5mm, 27mm, 192mm, 33.5mm) (InComponentClass('ATS-1-Panel')) And Small Component NPN2-NPN_3.1mm (128.5mm,22mm) on Top Layer 
+   Violation between Room Definition: Between Room ATS-1-Panel (Bounding Region = (162.5mm, 27mm, 192mm, 33.5mm) (InComponentClass('ATS-1-Panel')) And Small Component NPN3-NPN_3.2mm (134.5mm,7mm) on Top Layer 
+   Violation between Room Definition: Between Room ATS-1-Panel (Bounding Region = (162.5mm, 27mm, 192mm, 33.5mm) (InComponentClass('ATS-1-Panel')) And Small Component NPN4-NPN_3.2mm (134.5mm,41.5mm) on Top Layer 
+   Violation between Room Definition: Between Room ATS-1-Panel (Bounding Region = (162.5mm, 27mm, 192mm, 33.5mm) (InComponentClass('ATS-1-Panel')) And Small Component NPN5-NPN_7.5mm (119.5mm,15mm) on Top Layer 
+   Violation between Room Definition: Between Room ATS-1-Panel (Bounding Region = (162.5mm, 27mm, 192mm, 33.5mm) (InComponentClass('ATS-1-Panel')) And Small Component NPN6-NPN_7.5mm (100mm,15mm) on Top Layer 
+   Violation between Room Definition: Between Room ATS-1-Panel (Bounding Region = (162.5mm, 27mm, 192mm, 33.5mm) (InComponentClass('ATS-1-Panel')) And Small Component NPN7-NPN_3.2mm (7.5mm,7mm) on Top Layer 
+   Violation between Room Definition: Between Room ATS-1-Panel (Bounding Region = (162.5mm, 27mm, 192mm, 33.5mm) (InComponentClass('ATS-1-Panel')) And Small Component NPN8-NPN_3.2mm (7.5mm,41.5mm) on Top Layer 
+   Violation between Room Definition: Between Room ATS-1-Panel (Bounding Region = (162.5mm, 27mm, 192mm, 33.5mm) (InComponentClass('ATS-1-Panel')) And Small Component NPN9-NPN_3.1mm (153mm,3.3mm) on Top Layer 
+Rule Violations :11
+
+Processing Rule : Height Constraint (Min=0mm) (Max=25.4mm) (Prefered=12.7mm) (All)
+Rule Violations :0
+
+
+Violations Detected : 30
+Waived Violations : 0
+Time Elapsed        : 00:00:01

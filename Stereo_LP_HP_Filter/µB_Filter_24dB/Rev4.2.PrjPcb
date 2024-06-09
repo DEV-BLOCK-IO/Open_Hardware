@@ -151,33 +151,29 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=HZCQEKUH
 
-[GeneratedDocument1]
-DocumentPath=Project Outputs for Rev4.1\Design Rule Check - mib-pcb0009.html
-DItemRevisionGUID=
-
 [Parameter1]
-Name=CreatorSchematic
-Value=M. Rubin
+Name=Address2
+Value=Kreuzbergstraße 43
 
 [Parameter2]
-Name=CompanyName
-Value=M3 Instruments
-
-[Parameter3]
-Name=ApprovalSchematic
-Value=M. Rubin
-
-[Parameter4]
-Name=Address4
-Value=Germany
-
-[Parameter5]
 Name=Address3
 Value=10965 Berlin
 
+[Parameter3]
+Name=Address4
+Value=Germany
+
+[Parameter4]
+Name=ApprovalSchematic
+Value=M. Rubin
+
+[Parameter5]
+Name=CompanyName
+Value=M3 Instruments
+
 [Parameter6]
-Name=Address2
-Value=Kreuzbergstraße 43
+Name=CreatorSchematic
+Value=M. Rubin
 
 [Configuration1]
 Name=Default Configuration
@@ -892,6 +888,36 @@ OutputName10=Web Review Data
 OutputDocumentPath10=
 OutputVariantName10=
 OutputDefault10=0
+OutputType11=Ansoft Neutral
+OutputName11=Ansoft Neutral (AutoPCB)
+OutputDocumentPath11=
+OutputVariantName11=
+OutputDefault11=0
+OutputType12=HyperLynx
+OutputName12=HyperLynx (AutoPCB)
+OutputDocumentPath12=
+OutputVariantName12=
+OutputDefault12=0
+OutputType13=Orcad v7 Capture Design
+OutputName13=Orcad v7 Capture Design (AutoSCH)
+OutputDocumentPath13=
+OutputVariantName13=
+OutputDefault13=0
+OutputType14=P-CAD ASCII
+OutputName14=P-CAD ASCII (AutoPCB)
+OutputDocumentPath14=
+OutputVariantName14=
+OutputDefault14=0
+OutputType15=P-CAD V16 Schematic Design
+OutputName15=P-CAD V16 Schematic Design (AutoSCH)
+OutputDocumentPath15=
+OutputVariantName15=
+OutputDefault15=0
+OutputType16=SiSoft
+OutputName16=SiSoft (AutoPCB)
+OutputDocumentPath16=
+OutputVariantName16=
+OutputDefault16=0
 
 [OutputGroup10]
 Name=PostProcess Outputs
