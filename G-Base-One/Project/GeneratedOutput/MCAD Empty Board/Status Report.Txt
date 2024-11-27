@@ -1,0 +1,14 @@
+Project Outputs Generation Report
+---------------------------------
+Start Output Generation At 11:22:12 On 10.11.2024
+
+Output: Export STEP
+Type  : ExportSTEP
+From  : Variant [EH-TW-Go] of PCB Document [erb-pcb0002.PcbDoc]
+   Generated File[erb-pcb0002.step]
+
+
+Files Generated   : 1
+Documents Printed : 0
+
+Finished Output Generation At 11:22:16 On 10.11.2024

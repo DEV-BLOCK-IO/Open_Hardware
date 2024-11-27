@@ -1,0 +1,39 @@
+Altium Designer Pick and Place Locations
+D:\GoogleDrive\Entwicklung\Circuitstudio_Workspace\E-Rubin_G1_Board\GeneratedOutput\Assembly Standard\Pick Place\Pick Place for erb-pcb0002.txt
+
+========================================================================================================================
+File Design Information:
+
+Date:       10.11.24
+Time:       11:33
+Revision:   87e143e992a0118f2685859e25d97eeb86da2ab0
+Variant:    No variations
+Units used: mm
+
+Designator Center-X(mm) Center-Y(mm) Layer       Rotation Comment                   Footprint              
+R4         27.4000      18.5000      TopLayer    180      100k                      RESC1005X40N           
+Y1         24.9000      14.4000      TopLayer    90       "8MHz ±20ppm 20pF"        SMD-5032_2P            
+R3         29.7000      10.3300      TopLayer    270      DNP                       RESC1608X55N           
+R2         29.7000      13.2300      TopLayer    270      0R                        RESC1608X55N           
+IC1        14.0000      12.6000      TopLayer    90       STM32G070CBT6             LQFP-48_7x7x05P        
+NPN3       9.5000       17.6000      TopLayer    90       FID                       Fiducial_1mm           
+NPN2       35.0000      21.6000      TopLayer    90       FID                       Fiducial_1mm           
+NPN1       35.0000      2.6000       TopLayer    90       FID                       Fiducial_1mm           
+X7         29.7000      16.9900      BottomLayer 180      "HDR 1x2"                 CON_HEADER2.54_1X2W_NO 
+X5         6.8400       11.9100      BottomLayer 90       "HDR 1x6"                 61300611121_no         
+R1         27.5000      6.9000       TopLayer    270      130R                      RESC2012X70N           
+Y2         21.7000      7.7000       TopLayer    180      "32.768KHz ±20ppm 12.5pF" SMD-3215_2P_FC_-_135   
+C1         20.5000      15.8000      TopLayer    0        100nF                     CAPC1005X55            
+C10        18.6000      6.3000       TopLayer    90       8.2pF                     CAPC1608X95N           
+C9         24.8000      6.3000       TopLayer    90       8.2pF                     CAPC1608X95N           
+C8         27.5000      12.4000      TopLayer    90       22pF                      CAPC1608X95N           
+C7         27.5000      16.3000      TopLayer    270      22pF                      CAPC1608X95N           
+D1         29.7000      6.9000       TopLayer    270      RED                       WL-SMCW_0805           
+C2         20.6000      12.1000      TopLayer    180      100nF                     CAPC1005X55            
+C4         20.6000      9.9000       TopLayer    180      1uF                       CAPC1005X55            
+C5         20.6000      13.4000      TopLayer    180      100nF                     CAPC1005X55            
+C3         20.6000      11.2000      TopLayer    180      100nF                     CAPC1005X55            
+X4         4.3000       11.9100      BottomLayer 90       "HDR 1x6"                 61300611121_no         
+X3         32.3400      11.9100      BottomLayer 90       "HDR 1x6"                 61300611121_no         
+X2         18.2700      2.6200       BottomLayer 0        "HDR 1x12"                61301211121_no         
+X1         18.2700      21.2000      BottomLayer 180      "HDR 1x12"                61301211121_no         

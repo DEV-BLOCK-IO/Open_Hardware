@@ -1,0 +1,14 @@
+Project Outputs Generation Report
+---------------------------------
+Start Output Generation At 11:57:05 On 10.11.2024
+
+Output: Active Bill of Materials_1PCB-A
+Type  : BOM
+From  : Variant [EH-TW-OLD] of Project [G-Board-G070.PrjPcb]
+   Generated File[Active Bill of Materials_1PCB-A-G-Board-G070.xlsx]
+
+
+Files Generated   : 1
+Documents Printed : 0
+
+Finished Output Generation At 11:57:11 On 10.11.2024

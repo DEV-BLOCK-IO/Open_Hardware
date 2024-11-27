@@ -1,0 +1,236 @@
+*************************************************************
+FileName = erb-pcb0002.GBR
+AutoAperture = True
+*************************************************************
+Generating : Mechanical 1
+      File : erb-pcb0002.GM1
+
+    Adding Layer      : Mechanical 1
+
+
+Used DCodes :
+    D15
+    D45
+*************************************************************
+
+*************************************************************
+Generating : Signal_1
+      File : erb-pcb0002.G1
+
+    Adding Layer      : Signal_1
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D15
+    D40
+    D41
+    D42
+    D43
+    D44
+*************************************************************
+
+*************************************************************
+Generating : Top Layer
+      File : erb-pcb0002.GTL
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D11
+    D12
+    D15
+    D16
+    D17
+    D18
+    D19
+    D20
+    D21
+    D22
+    D23
+    D24
+    D39
+    D40
+    D41
+    D42
+    D43
+    D44
+*************************************************************
+
+*************************************************************
+Generating : Keep-Out Layer
+      File : erb-pcb0002.GKO
+
+    Adding Layer      : Keep-Out Layer
+
+
+Used DCodes :
+    D45
+*************************************************************
+
+*************************************************************
+Generating : Signal_2
+      File : erb-pcb0002.G2
+
+    Adding Layer      : Signal_2
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D15
+    D40
+    D41
+    D42
+    D43
+    D44
+*************************************************************
+
+*************************************************************
+Generating : Top Overlay
+      File : erb-pcb0002.GTO
+
+    Adding Layer      : Top Overlay
+
+
+Used DCodes :
+    D10
+    D11
+    D12
+    D13
+    D14
+    D15
+*************************************************************
+
+*************************************************************
+Generating : Bottom Overlay
+      File : erb-pcb0002.GBO
+
+    Adding Layer      : Bottom Overlay
+
+
+Used DCodes :
+    D15
+*************************************************************
+
+*************************************************************
+Generating : Top Bottom
+      File : erb-pcb0002.GBL
+
+    Adding Layer      : Top Bottom
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D15
+    D40
+    D41
+    D42
+    D43
+    D44
+*************************************************************
+
+*************************************************************
+Generating : Top Paste
+      File : erb-pcb0002.GTP
+
+    Adding Layer      : Top Paste
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D15
+    D16
+    D17
+    D18
+    D19
+    D20
+    D21
+    D22
+    D23
+    D24
+*************************************************************
+
+*************************************************************
+Generating : Top Solder
+      File : erb-pcb0002.GTS
+
+    Adding Layer      : Top Solder
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D15
+    D25
+    D26
+    D27
+    D28
+    D29
+    D30
+    D31
+    D32
+    D33
+    D34
+    D35
+    D36
+    D37
+    D38
+*************************************************************
+
+*************************************************************
+Generating : Bottom Solder
+      File : erb-pcb0002.GBS
+
+    Adding Layer      : Bottom Solder
+
+    Adding Layer      : Top Bottom
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D15
+    D34
+    D35
+    D36
+    D37
+    D38
+*************************************************************
+
+*************************************************************
+Generating : Drill Drawing
+      File : erb-pcb0002.GD1
+
+    Adding Drill Pair : Top Layer-Top Bottom
+
+    Adding Layer      : Drill Drawing
+
+
+Used DCodes :
+    D13
+    D15
+    D46
+    D47
+    D48
+*************************************************************
+
+*************************************************************
+Generating : Profile
+      File : erb-pcb0002.GM
+
+
+Used DCodes :
+    D49
+*************************************************************
+

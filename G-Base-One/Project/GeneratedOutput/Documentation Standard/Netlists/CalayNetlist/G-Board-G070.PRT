@@ -1,0 +1,26 @@
+0R                  R2                  RESC1608X55N        000     000     0
+100k                R4                  RESC1005X40N        000     000     0
+100nF               C1                  CAPC1005X55         000     000     0
+100nF               C2                  CAPC1005X55         000     000     0
+100nF               C3                  CAPC1005X55         000     000     0
+100nF               C5                  CAPC1005X55         000     000     0
+130R                R1                  RESC2012X70N        000     000     0
+1uF                 C4                  CAPC1005X55         000     000     0
+22pF                C7                  CAPC1608X95N        000     000     0
+22pF                C8                  CAPC1608X95N        000     000     0
+32.768KHz ±20ppm 12 Y2                  SMD-3215_2P FC - 13 000     000     0
+8.2pF               C10                 CAPC1608X95N        000     000     0
+8.2pF               C9                  CAPC1608X95N        000     000     0
+8MHz ±20ppm 20pF    Y1                  SMD-5032_2P         000     000     0
+DNP                 R3                  RESC1608X55N        000     000     0
+FID                 NPN1                Fiducial_1mm        000     000     0
+FID                 NPN2                Fiducial_1mm        000     000     0
+FID                 NPN3                Fiducial_1mm        000     000     0
+HDR 1x12            X1                  61301211121_no      000     000     0
+HDR 1x12            X2                  61301211121_no      000     000     0
+HDR 1x2             X7                  CON_HEADER2.54_1x2W 000     000     0
+HDR 1x6             X3                  61300611121_no      000     000     0
+HDR 1x6             X4                  61300611121_no      000     000     0
+HDR 1x6             X5                  61300611121_no      000     000     0
+RED                 D1                  WL-SMCW_0805        000     000     0
+STM32G070CBT6       IC1                 LQFP-48_7x7x05P     000     000     0

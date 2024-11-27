@@ -1,0 +1,46 @@
+Project Outputs Generation Report
+---------------------------------
+Start Output Generation At 11:22:02 On 10.11.2024
+
+Output: Copy Files
+Type  : Copy Files
+From  : Project [G-Board-G070.PrjPcb]
+   Generated File[3D-Views-Empty.OutJob]
+   Generated File[3D-Views-Standard.OutJob]
+   Generated File[AssemblyPrint-Standard.OutJob]
+   Generated File[BOM-Standard.OutJob]
+   Generated File[DevNotePrint.OutJob]
+   Generated File[DraftsMan.OutJob]
+   Generated File[ERC_DRC_report.OutJob]
+   Generated File[Gerber.OutJob]
+   Generated File[Gerber_panel.OutJob]
+   Generated File[Impedance.OutJob]
+   Generated File[Netlists-Standard.OutJob]
+   Generated File[PickPlace-Standard.OutJob]
+   Generated File[SchematicPrint-Standard.OutJob]
+   Generated File[Sources.OutJob]
+   Generated File[Stencil.OutJob]
+   Generated File[STEP-Empty.OutJob]
+   Generated File[STEP-Standard.OutJob]
+   Generated File[GenOutput.js]
+   Generated File[PinLister.js]
+   Generated File[preparePNG_2S.bat]
+   Generated File[prepareSphinx.js]
+   Generated File[.gitignore]
+   Generated File[4-layer_jlc.stackup]
+   Generated File[Belegung.xlsx]
+   Generated File[CPL_mib-pcb0014.xlsx]
+   Generated File[erb-pcb0002.PcbDoc]
+   Generated File[erb-pcb0002.PCBDwf]
+   Generated File[G-Board-G070.BomDoc]
+   Generated File[G-Board-G070.PrjPcb]
+   Generated File[G-Board-G070.PrjPcbStructure]
+   Generated File[G-Board.OutJob]
+   Generated File[Main.SchDoc]
+   Generated File[~$Belegung.xlsx]
+
+
+Files Generated   : 33
+Documents Printed : 0
+
+Finished Output Generation At 11:22:02 On 10.11.2024
