@@ -1,0 +1,40 @@
+.. Never add or change more than content informations (ex. LaTeX formatting),
+   instead edit structure and formattings in files:
+   contacts.rst
+
+.. image:: /_images/alpha-board-button.*
+   :alt: alpha-board GmbH
+   :align: right
+
+.. rst-class:: centered
+
+.. rubric:: **alpha-board**
+
+.. tabularcolumns:: |L{60mm}R{80mm}|
+.. list-table::
+   :widths: 60 80
+   :header-rows: 0
+   :align: center
+   :width: 60%
+
+   * - | **alpha-board GmbH**
+       | Oderbruchstraße 14
+       | 10369 Berlin
+       | *GERMANY*
+     - | Tel: +49 (0) 30 927032 0
+       | Fax: +49 (0) 30 927032 20
+       | E-Mail: info@alpha-board.de
+       | WEB: https://www.alpha-board.de/
+
+:contributors:
+
+   * |albg_contact|
+   
+.. todo:: Todo
+
+.. Local variables:
+   coding: utf-8
+   mode: text
+   mode: rst
+   End:
+   vim: fileencoding=utf-8 filetype=rst :

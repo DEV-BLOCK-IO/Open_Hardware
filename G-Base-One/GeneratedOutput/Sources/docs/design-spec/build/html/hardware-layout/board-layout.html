@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta content="Sphinx 7.3.7" name="producer" />
+<meta content="Sphinx 7.3.7" name="creator" />
+<meta content="alpha-board GmbH" name="publisher" />
+<meta content="Design Specification of the EH-Türwächter nextGen." name="subject" />
+<meta content="GfS,Design Specification,EH-Türwächter nextGen" name="keywords" />
+<meta content="alpha-board GmbH" name="author" />
+<meta content="2023‒2024 alpha-board GmbH" name="copyright" />
+<meta content="preliminary (:emphasis:`some mature, much in progress`)" name="docstat" />
+<meta content="GfS" name="docnumb" />
+<meta content="EH-Türwächter nextGen" name="project" />
+<meta content="EH-Türwächter nextGen 0.x" name="title" />
+<meta content="Design Specification" name="subtitle" />
+<meta content="0.0.0" name="version" />
+<meta content="0.0.0-invalid+unknown" name="release" />
+<meta content="00000000" name="identify" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta content="None" name="topic" />
+    
+  <title>4.1. Board Layout &mdash; Design Specification EH-Türwächter nextGen 0.x</title>
+  
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=fd3f3429" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/tweaks-sphinx_rtd_theme.css?v=6a18d337" />
+
+  
+    <link rel="shortcut icon" href="../_static/alpha-board-favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=98c1a3ee"></script>
+        <script src="../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="4.2. Board Assembly Drawing" href="board-assembly-drawing.html" />
+    <link rel="prev" title="4. Hardware Layout" href="../hardware-layout.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            EH-Türwächter nextGen
+              <img src="../_static/alpha-board-logo-white.svg" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                0.0.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+    
+              <p class="caption" role="heading"><span class="caption-text">Table of Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../pcb.html">1. PCB</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../system-components.html">2. System Components</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../system-integration.html">3. System Integration</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../hardware-layout.html">4. Hardware Layout</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">4.1. Board Layout</a></li>
+<li class="toctree-l2"><a class="reference internal" href="board-assembly-drawing.html">4.2. Board Assembly Drawing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="board-mechanical-drawing.html">4.3. Board Mechanical Drawing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="board-positions.html">4.4. Position of Interfaces, Buttons, LEDs</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Appendices</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../appendix.html">PCB-A Parts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendix.html#general-information">General Information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../glossary.html">Glossary</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Lists and References</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../acronyms.html">Acronyms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../indexlol.html">Listings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../indexlot.html">List of Tables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../indexlof.html">List of Figures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../indexloe.html">List of Equations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../indexlod.html">List of Downloads</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../indexloi.html">List of Issues</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../bibliography.html">Bibliography</a></li>
+</ul>
+
+    <ul><li class="toctree-l1">
+        <a class="reference internal"
+           href="../genindex.html">Index</a>
+    </li></ul>
+  
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">EH-Türwächter nextGen</a>
+      </nav>
+
+      <div class="wy-nav-content">
+    
+
+<div class="rst-content style-external-links">
+
+  <dl class="field-list simple">
+    <dt class="field-odd" style="line-height: unset;">EH-Türwächter nextGen 0.x</dt>
+    <dd class="field-odd" style="line-height: unset;">Design Specification</dd>
+    <dt class="field-even" style="line-height: unset;">Document Number</dt>
+    <dd class="field-even" style="line-height: unset;">GfS</dd>
+    <dt class="field-odd" style="line-height: unset;">Revision (VCS)</dt>
+    <dd class="field-odd" style="line-height: unset;">0.0.0-invalid+unknown (00000000)</dd>
+  </dl>
+</div>
+    
+        <div class="rst-content style-external-links">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../hardware-layout.html"><span class="section-number">4. </span>Hardware Layout</a></li>
+      <li class="breadcrumb-item active"><span class="section-number">4.1. </span>Board Layout</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/hardware-layout/board-layout.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="board-layout">
+<h1><span class="section-number">4.1. </span>Board Layout<a class="headerlink" href="#board-layout" title="Link to this heading"></a></h1>
+<figure class="align-center" id="board-layout-realistic-view-top-populated">
+<img alt="Board Layout Realistic View Top (populated)" src="../_images/board-layout-top.png" />
+<figcaption>
+<p><span class="caption-number">Figure 4.1 </span><span class="caption-text">Board Layout Realistic View Top (populated)</span><a class="headerlink" href="#board-layout-realistic-view-top-populated" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="board-layout-realistic-view-top-empty">
+<img alt="Board Layout Realistic View Top (empty)" src="../_images/board-layout-empty-top.png" />
+<figcaption>
+<p><span class="caption-number">Figure 4.2 </span><span class="caption-text">Board Layout Realistic View Top (empty)</span><a class="headerlink" href="#board-layout-realistic-view-top-empty" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="board-layout-realistic-view-bot-populated">
+<img alt="Board Layout Realistic View Bot (populated)" src="../_images/board-layout-bottom.png" />
+<figcaption>
+<p><span class="caption-number">Figure 4.3 </span><span class="caption-text">Board Layout Realistic View Bot (populated)</span><a class="headerlink" href="#board-layout-realistic-view-bot-populated" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="board-layout-realistic-view-bot-empty">
+<img alt="Board Layout Realistic View Bot (empty)" src="../_images/board-layout-empty-bottom.png" />
+<figcaption>
+<p><span class="caption-number">Figure 4.4 </span><span class="caption-text">Board Layout Realistic View Bot (empty)</span><a class="headerlink" href="#board-layout-realistic-view-bot-empty" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../hardware-layout.html" class="btn btn-neutral float-left" title="4. Hardware Layout" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="board-assembly-drawing.html" class="btn btn-neutral float-right" title="4.2. Board Assembly Drawing" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023‒2024 alpha-board GmbH.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+  
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,5 @@
+Record=TopLevelDocument|FileName=Connector.SchDoc|SheetNumber= 
+Record=NoMainPathDocument|SourceDocument=Connector.SchDoc|FileName=Filter_L.SchDoc|SheetNumber= 
+Record=NoMainPathDocument|SourceDocument=Connector.SchDoc|FileName=Filter_R.SchDoc|SheetNumber= 
+Record=NoMainPathDocument|SourceDocument=Connector.SchDoc|FileName=LED-Meter.SchDoc|SheetNumber= 
+Record=NoMainPathDocument|SourceDocument=Connector.SchDoc|FileName=Power.SchDoc|SheetNumber= 

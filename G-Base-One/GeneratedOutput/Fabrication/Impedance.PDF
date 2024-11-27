@@ -1,0 +1,146 @@
+%PDF-1.4
+%ÒåÑò
+8 0 obj
+<</Creator (Altium Designer)
+/CreationDate (D:20241127000000)
+/Producer (llPDFLib 3.x)
+/Author (Manuel Rubin)
+/Title (Job Group)
+/Subject ()
+/Keywords (Altium)
+>>
+endobj
+1 0 obj
+<</Type /Pages
+/Kids [
+9 0 R
+]
+/Count 1
+>>
+endobj
+6 0 obj
+<</S /GoTo /D [9 0 R /FitR 0 595 841 0]
+>>
+endobj
+7 0 obj
+<</S /GoTo /D [9 0 R /FitR 0 595 841 0]
+>>
+endobj
+13 0 obj
+<</Title <FEFF004400720061006600740073006D0061006E>
+/Count -1
+/First 14 0 R
+/Last 14 0 R
+/Parent 12 0 R
+/A 6 0 R
+>>
+endobj
+14 0 obj
+<</Title <FEFF005300680065006500740031>
+/Parent 13 0 R
+/A 7 0 R
+>>
+endobj
+12 0 obj
+<</Type /Outlines
+/Count 2
+/First 13 0 R
+/Last 13 0 R
+>>
+endobj
+15 0 obj
+<</Type /Catalog
+ /Pages 1 0 R
+/PageLayout /SinglePage
+/PageMode /UseOutlines
+/Outlines 12 0 R
+/Names 16 0 R
+>>
+endobj
+16 0 obj
+<</JavaScript 17 0 R
+>>
+endobj
+17 0 obj
+<</Names [ (_FindWord) 18 0 R (_HighlightRect) 19 0 R]
+>>
+endobj
+18 0 obj
+<</S /JavaScript /JS (function _FindWord\(pageIndex, wordToFind\){this.selectPageNthWord\(pageIndex, 0, bScroll=false\);\r\nvar numWords = this.getPageNumWords\(pageIndex\);\r\nfor \(var nWord = 0; nWord < numWords; nWord++\)\r\n{\r\n    var matchWord = this.getPageNthWord\(pageIndex, nWord, true\);\r\n    if \( matchWord == wordToFind\)\r\n    {\r\n        this.selectPageNthWord\(pageIndex, nWord, bScroll=false\);\r\n        break;\r\n    }\r\n}}) 
+>>
+endobj
+19 0 obj
+<</S /JavaScript /JS (function _HighlightRect\(pageIndex, left, top, right, bottom\){this.selectPageNthWord\(pageIndex, 0, bScroll=false\);                                                 \r\nvar lastDist = -1.0;                                                                                 \r\nvar lastIndex = -1;                                                                                  \r\nvar matInv = \(new Matrix2D\).fromRotated\(this, pageIndex\).invert\(\);                                   \r\nfor \(var i = 0; i < this.getPageNumWords\(pageIndex\); i++\) {                                          \r\n    var quads = matInv.transform\(this.getPageNthWordQuads\(pageIndex, i\)\).toString\(\).split\(","\);      \r\n    var qLeft = Math.min\(Math.min\(quads[0], quads[2]\), Math.min\(quads[4], quads[6]\)\);                \r\n    var qRight = Math.max\(Math.max\(quads[0], quads[2]\), Math.max\(quads[4], quads[6]\)\);               \r\n    var qTop = Math.min\(Math.min\(quads[1], quads[3]\), Math.min\(quads[5], quads[7]\)\);                 \r\n    var qBottom = Math.max\(Math.max\(quads[1], quads[3]\), Math.max\(quads[5], quads[7]\)\);              \r\n    if \(\(left >= qRight\) || \(right <= qLeft\) || \(top >= qBottom\) || \(bottom <= qTop\)\) continue;      \r\n    var dist =   Math.abs\(left - qLeft\) + Math.abs\(right - qRight\)                                   \r\n               + Math.abs\(top - qTop\) + Math.abs\(bottom - qBottom\);                                  \r\n    if \(\(lastDist >= 0\) && \(lastDist <= dist\)\) continue;                                             \r\n    lastDist = dist;                                                                                 \r\n    lastIndex = i;                                                                                   \r\n}                                                                                                    \r\nif \(lastIndex >= 0\) this.selectPageNthWord\(pageIndex, lastIndex, bScroll=false\);                     }) 
+>>
+endobj
+9 0 obj
+<<
+/Type/Page
+/MediaBox[0 0 841.89 595.276]
+/Parent 1 0 R
+/Contents 10 0 R
+/Resources
+<<
+/ProcSet[/PDF/Text/ImageB/ImageC/ImageI]
+/ExtGState
+<<
+/GS0 11 0 R
+>>
+>>
+/Group
+<<
+/CS/DeviceRGB
+/S/Transparency
+/I false
+/K false
+>>
+>>
+endobj
+10 0 obj
+<<
+/Length 94
+/Filter/FlateDecode
+>>
+stream
+xœŒA
+@P„÷sŠ¹€gÈÏs¥,ÄNVH),”Ó{ô5}MMs ¡Ñ'+Í¥EÎi]bÿà€\f¼Ã¬†¸!£8#®:q½P8ãŸæÎ—4¯ÿå\Ð¡¼üY
+endstream
+endobj
+11 0 obj
+<<
+/Type/ExtGState
+/CA 1
+>>
+endobj
+xref
+0 20
+0000000000 65535 f
+0000000205 00000 n
+0000000000 00000 n
+0000000000 00000 n
+0000000000 00000 n
+0000000000 00000 n
+0000000271 00000 n
+0000000333 00000 n
+0000000017 00000 n
+0000003511 00000 n
+0000003752 00000 n
+0000003917 00000 n
+0000000625 00000 n
+0000000395 00000 n
+0000000536 00000 n
+0000000705 00000 n
+0000000842 00000 n
+0000000886 00000 n
+0000000964 00000 n
+0000001441 00000 n
+trailer
+<<
+/Size 20
+/Root 15 0 R
+/Info 8 0 R
+/ID [<ec8816e8a6aaad91f76ea8c29a6dedaf><ec8816e8a6aaad91f76ea8c29a6dedaf>]
+>>
+startxref
+3961
+%%EOF

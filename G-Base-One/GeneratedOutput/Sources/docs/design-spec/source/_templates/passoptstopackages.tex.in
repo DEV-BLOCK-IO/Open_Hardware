@@ -1,0 +1,31 @@
+%
+% START: DSCB latex_custom_passoptionstopackages
+%
+% Set up behavior of all captions
+\PassOptionsToPackage{{%%
+    justification=centering%%
+}}{{caption}}
+%
+% Set up different color namespaces
+\PassOptionsToPackage{{%%
+    dvipsnames,%%
+    svgnames,%%
+    table%%
+}}{{xcolor}}
+%
+% Set up the target PDF meta data
+\PassOptionsToPackage{{%%
+    pdfproducer={{{producer}}},%%
+    pdfcreator={{{creator}}},%%
+    pdfsubject={{{subject}}},%%
+    pdfkeywords={{{keywords}}},%%
+    pdfdisplaydoctitle=true,%%
+    unicode=true,%%
+    colorlinks=true,%%
+    breaklinks=true,%%
+    bookmarks=true,%%
+    bookmarksnumbered=true,%%
+}}{{hyperref}}
+%
+% END: DSCB latex_custom_passoptionstopackages
+%

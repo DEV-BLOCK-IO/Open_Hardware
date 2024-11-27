@@ -1,0 +1,24 @@
+:topic: Full DevNote List
+
+.. index:: triple: Lights and Signals; Design Specification; ALBG Template
+   :name: dsnps-pcba-catchall
+
+##################
+Full DevNote List
+##################
+
+.. todo:: add Full DevNote List from /_autogen/CAD
+
+.. toctree::
+   :glob:
+
+   /_autogen/CAD/_autogen_*_*
+
+:raw-latex:`\clearpage\phantomsection`
+
+.. Local variables:
+   coding: utf-8
+   mode: text
+   mode: rst
+   End:
+   vim: fileencoding=utf-8 filetype=rst :

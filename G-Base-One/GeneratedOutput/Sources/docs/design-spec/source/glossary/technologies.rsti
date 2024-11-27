@@ -1,0 +1,87 @@
+.. Never add or change more than term replacements (ex. LaTeX formatting).
+
+.. Glossary Replacements:
+
+.. Technologies:
+
+.. |BibTeX|                     replace:: :term:`BibTeX`
+.. |BPMN|                       replace:: :term:`BPMN`
+.. |CORBA|                      replace:: :term:`CORBA`
+.. |CSS|                        replace:: :term:`CSS`
+.. |Enchant|                    replace:: :term:`Enchant`
+.. |HTML|                       replace:: :term:`HTML`
+.. |MOF|                        replace:: :term:`MOF`
+.. |OCL|                        replace:: :term:`OCL`
+.. |PDF|                        replace:: :term:`PDF`
+.. |QVT|                        replace:: :term:`QVT`
+.. |SVG|                        replace:: :term:`SVG`
+.. |SysML|                      replace:: :term:`SysML`
+.. |TeX|                        replace:: :term:`TeX`
+.. |UML|                        replace:: :term:`UML`
+.. |XML|                        replace:: :term:`XML`
+
+.. _`BibTeX`: http://www.bibtex.org/
+.. _`CSS`: https://www.w3.org/Style/CSS/
+.. _`CSS 2.1`: https://www.w3.org/TR/2011/REC-CSS2-20110607/
+.. _`CSS 2.0`: https://www.w3.org/TR/1998/REC-CSS2-19980512/
+.. _`CSS 1.0`: https://www.w3.org/TR/REC-CSS1-961217
+.. _`Enchant`: https://abiword.github.io/enchant/
+.. _`HTML`: https://html.spec.whatwg.org/
+.. _`MOF`: https://www.omg.org/spec/MOF/
+.. _`MOF 2.5.1`: https://www.omg.org/spec/MOF/2.5.1
+.. _`MOF 2.5`: https://www.omg.org/spec/MOF/2.5
+.. _`ISO 19508:2014`: https://www.omg.org/spec/MOF/ISO/19508/PDF
+.. _`MOF 2.4.2`: https://www.omg.org/spec/MOF/2.4.2
+.. _`MOF 2.4.1`: https://www.omg.org/spec/MOF/2.4.1
+.. _`MOF 2.0`: https://www.omg.org/spec/MOF/2.0
+.. _`ISO 19502:2005`: https://www.omg.org/spec/MOF/ISO/19502/PDF
+.. _`MOF 1.4`: https://www.omg.org/spec/MOF/1.4
+.. _`OCL`: https://www.omg.org/spec/OCL/
+.. _`OCL 2.4`: https://www.omg.org/spec/OCL/2.4
+.. _`ISO 19507:2012`: https://www.omg.org/spec/OCL/ISO/19507/PDF
+.. _`OCL 2.3.1`: https://www.omg.org/spec/OCL/2.3.1
+.. _`OCL 2.2`: https://www.omg.org/spec/OCL/2.2
+.. _`OCL 2.0`: https://www.omg.org/spec/OCL/2.0
+.. _`PDF`: https://www.pdfa.org/
+.. _`QVT`: https://www.omg.org/spec/QVT/
+.. _`QVT 1.3`: https://www.omg.org/spec/QVT/1.3
+.. _`QVT 1.2`: https://www.omg.org/spec/QVT/1.2
+.. _`QVT 1.1`: https://www.omg.org/spec/QVT/1.1
+.. _`QVT 1.0`: https://www.omg.org/spec/QVT/1.0
+.. _`SVG`: https://www.w3.org/Graphics/SVG/
+.. _`SVG 2.0`: https://svgwg.org/
+.. _`SVG 1.1 Second Edition`: https://www.w3.org/TR/2011/REC-SVG11-20110816/
+.. _`SVG 1.1`: https://www.w3.org/TR/2003/REC-SVG11-20030114/
+.. _`SVG 1.0`: https://www.w3.org/TR/2001/REC-SVG-20010904/
+.. _`TeX`: https://tug.org/
+.. _`UML`: https://www.uml.org/
+.. _`UML 2.5.1`: https://www.omg.org/spec/UML/2.5.1
+.. _`UML 2.5`: https://www.omg.org/spec/UML/2.5
+.. _`ISO 19505-1:2012`: https://www.omg.org/spec/UML/ISO/19505-1/PDF
+.. _`ISO 19505-2:2012`: https://www.omg.org/spec/UML/ISO/19505-2/PDF
+.. _`UML 2.4.1`: https://www.omg.org/spec/UML/2.4.1
+.. _`UML 2.4`: https://www.omg.org/spec/UML/2.4
+.. _`UML 2.3`: https://www.omg.org/spec/UML/2.3
+.. _`UML 2.2`: https://www.omg.org/spec/UML/2.2
+.. _`UML 2.1.2`: https://www.omg.org/spec/UML/2.1.2
+.. _`UML 2.1.1`: https://www.omg.org/spec/UML/2.1.1
+.. _`UML 2.0`: https://www.omg.org/spec/UML/2.0
+.. _`UML 1.5`: https://www.omg.org/spec/UML/1.5
+.. _`ISO 19501:2005`: https://www.omg.org/spec/UML/ISO/19501/PDF
+.. _`UML 1.4`: https://www.omg.org/spec/UML/1.4
+.. _`UML 1.3`: https://www.omg.org/spec/UML/1.3
+.. _`UML 1.2`: https://www.omg.org/spec/UML/1.2
+.. _`UML 1.1`: https://www.omg.org/spec/UML/1.1
+.. _`UMLDI 1.0`: https://www.omg.org/spec/UMLDI/1.0
+.. _`XML`: https://www.w3.org/XML/Core/
+.. _`XML 1.1 Second Edition`: https://www.w3.org/TR/2006/REC-xml11-20060816/
+.. _`XML 1.1`: https://www.w3.org/TR/2004/REC-xml11-20040204/
+.. _`XML 1.0 Fifth Edition`: https://www.w3.org/TR/2008/REC-xml-20081126/
+.. _`XML 1.0`: https://www.w3.org/TR/1998/REC-xml-19980210
+
+.. Local variables:
+   coding: utf-8
+   mode: text
+   mode: rst
+   End:
+   vim: fileencoding=utf-8 filetype=rst :

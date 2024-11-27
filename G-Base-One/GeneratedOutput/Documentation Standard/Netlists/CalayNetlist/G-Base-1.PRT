@@ -1,0 +1,133 @@
+                    D6                  DQA R-PUSON-N10     000     000     0
+                    D7                  DQA R-PUSON-N10     000     000     0
+0R                  R18                 RESC1608X55N        000     000     0
+0R                  R19                 RESC1608X55N        000     000     0
+0R                  R20                 RESC1608X55N        000     000     0
+0R                  R21                 RESC1608X55N        000     000     0
+0R                  R22                 RESC1608X55N        000     000     0
+0R                  R23                 RESC1608X55N        000     000     0
+100k                R1                  RESC2012X70N        000     000     0
+100k                R12                 RESC2012X70N        000     000     0
+100k                R14                 RESC2012X70N        000     000     0
+100k                R2                  RESC2012X70N        000     000     0
+100k                R5                  RESC2012X70N        000     000     0
+100k                R8                  RESC2012X70N        000     000     0
+100n                C1                  CAPC1608X95N        000     000     0
+100n                C11                 CAPC1608X95N        000     000     0
+100n                C13                 CAPC1608X95N        000     000     0
+100n                C2                  CAPC1608X95N        000     000     0
+100n                C4                  CAPC1608X95N        000     000     0
+100n                C8                  CAPC1608X95N        000     000     0
+100nF               C3                  CAPC1608X95N        000     000     0
+100nF               C7                  CAPC1608X95N        000     000     0
+10118193-0001LF     X44                 USB-Micro-B-RA-SMD- 000     000     0
+10118193-0001LF     X46                 USB-Micro-B-RA-SMD- 000     000     0
+120R                L2                  INDC1608X95AN       000     000     0
+120R                L3                  INDC1608X95AN       000     000     0
+1k                  R15                 RESC1608X55AN       000     000     0
+1N4148W-7-F         D10                 SOD-123             000     000     0
+1N4148W-7-F         D8                  SOD-123             000     000     0
+1N4148W-7-F         D9                  SOD-123             000     000     0
+1uF                 C5                  CAPC2012X145N       000     000     0
+1uF                 C6                  CAPC2012X145N       000     000     0
+22k                 R17                 RESC1608X55AN       000     000     0
+22u                 C10                 CAPAE4643X54M       000     000     0
+22u                 C9                  CAPAE4643X54M       000     000     0
+2u2                 L1                  INDP5050X39N        000     000     0
+33k                 R16                 RESC1608X55AN       000     000     0
+4u7                 C12                 CAPC1608X95N        000     000     0
+4u7                 C14                 CAPC1608X95N        000     000     0
+560R                R10                 RESC1608X55N        000     000     0
+560R                R3                  RESC1608X55N        000     000     0
+560R                R4                  RESC1608X55N        000     000     0
+560R                R7                  RESC1608X55N        000     000     0
+560R                R9                  RESC1608X55N        000     000     0
+B2B-XH              X47                 JST_B2B-XH-A_(LF)(S 000     000     0
+CP2102N-A02         IC1                 SILABS_CP2102N-A02- 000     000     0
+DNP                 R24                 RESC2012X70N        000     000     0
+FID                 NPN1                Fiducial_1mm        000     000     0
+FID                 NPN2                Fiducial_1mm        000     000     0
+FID                 NPN3                Fiducial_1mm        000     000     0
+FID                 NPN4                Fiducial_1mm        000     000     0
+FID                 NPN5                Fiducial_1mm        000     000     0
+FID                 NPN6                Fiducial_1mm        000     000     0
+FID                 NPN7                Fiducial_1mm        000     000     0
+FID                 NPN8                Fiducial_1mm        000     000     0
+FTSH-107-01-L-DV-K  X45                 HDR_2x5-SMD-1.27mm- 000     000     0
+HDR 1x12            X1                  61301211821_NO      000     000     0
+HDR 1x12            X2                  61301211821_NO      000     000     0
+HDR 1x2             X25                 61300211821_NO      000     000     0
+HDR 1x2             X41                 CON_HEADER2.54_1x2W 000     000     0
+HDR 1x2             X42                 CON_HEADER2.54_1x2W 000     000     0
+HDR 1x2             X43                 CON_HEADER2.54_1x2W 000     000     0
+HDR 1x2             X66                 CON_HEADER2.54_1x2W 000     000     0
+HDR 1x6             X26                 61300611821_NO      000     000     0
+HDR 1x6             X33                 61300611821_NO      000     000     0
+HDR 1x6             X34                 61300611821_NO      000     000     0
+PAD                 X10                 PAD_1.1_1.6         000     000     0
+PAD                 X11                 PAD_1.1_1.6         000     000     0
+PAD                 X12                 PAD_1.1_1.6         000     000     0
+PAD                 X13                 PAD_1.1_1.6         000     000     0
+PAD                 X14                 PAD_1.1_1.6         000     000     0
+PAD                 X15                 PAD_1.1_1.6         000     000     0
+PAD                 X16                 PAD_1.1_1.6         000     000     0
+PAD                 X17                 PAD_1.1_1.6         000     000     0
+PAD                 X18                 PAD_1.1_1.6         000     000     0
+PAD                 X19                 PAD_1.1_1.6         000     000     0
+PAD                 X20                 PAD_1.1_1.6         000     000     0
+PAD                 X21                 PAD_1.1_1.6         000     000     0
+PAD                 X22                 PAD_1.1_1.6         000     000     0
+PAD                 X23                 PAD_1.1_1.6         000     000     0
+PAD                 X24                 PAD_1.1_1.6         000     000     0
+PAD                 X27                 PAD_1.1_1.6         000     000     0
+PAD                 X28                 PAD_1.1_1.6         000     000     0
+PAD                 X29                 PAD_1.1_1.6         000     000     0
+PAD                 X3                  PAD_1.1_1.6         000     000     0
+PAD                 X30                 PAD_1.1_1.6         000     000     0
+PAD                 X31                 PAD_1.1_1.6         000     000     0
+PAD                 X32                 PAD_1.1_1.6         000     000     0
+PAD                 X35                 PAD_1.1_1.6         000     000     0
+PAD                 X36                 PAD_1.1_1.6         000     000     0
+PAD                 X37                 PAD_1.1_1.6         000     000     0
+PAD                 X38                 PAD_1.1_1.6         000     000     0
+PAD                 X39                 PAD_1.1_1.6         000     000     0
+PAD                 X4                  PAD_1.1_1.6         000     000     0
+PAD                 X40                 PAD_1.1_1.6         000     000     0
+PAD                 X48                 PAD_1.1_1.6         000     000     0
+PAD                 X49                 PAD_1.1_1.6         000     000     0
+PAD                 X5                  PAD_1.1_1.6         000     000     0
+PAD                 X50                 PAD_1.1_1.6         000     000     0
+PAD                 X51                 PAD_1.1_1.6         000     000     0
+PAD                 X52                 PAD_1.1_1.6         000     000     0
+PAD                 X53                 PAD_1.1_1.6         000     000     0
+PAD                 X54                 PAD_1.1_1.6         000     000     0
+PAD                 X55                 PAD_1.1_1.6         000     000     0
+PAD                 X56                 PAD_1.1_1.6         000     000     0
+PAD                 X57                 PAD_1.1_1.6         000     000     0
+PAD                 X58                 PAD_1.1_1.6         000     000     0
+PAD                 X59                 PAD_1.1_1.6         000     000     0
+PAD                 X6                  PAD_1.1_1.6         000     000     0
+PAD                 X60                 PAD_1.1_1.6         000     000     0
+PAD                 X61                 PAD_1.1_1.6         000     000     0
+PAD                 X62                 PAD_1.1_1.6         000     000     0
+PAD                 X63                 PAD_1.1_1.6         000     000     0
+PAD                 X64                 PAD_1.1_1.6         000     000     0
+PAD                 X65                 PAD_1.1_1.6         000     000     0
+PAD                 X7                  PAD_1.1_1.6         000     000     0
+PAD                 X8                  PAD_1.1_1.6         000     000     0
+PAD                 X9                  PAD_1.1_1.6         000     000     0
+POT_50k_lin_9mm     R13                 PTV09               000     000     0
+POT_50k_lin_9mm     R6                  PTV09               000     000     0
+RED                 D1                  WL-SMCW_0805        000     000     0
+RED                 D2                  WL-SMCW_0805        000     000     0
+RED                 D3                  WL-SMCW_0805        000     000     0
+RED                 D4                  WL-SMCW_0805        000     000     0
+RED                 D5                  WL-SMCW_0805        000     000     0
+TP 0.7mm            TP2                 TP_0.7mm            000     000     0
+TP 0.7mm            TP3                 TP_0.7mm            000     000     0
+UK-B0228-G5-160-JZ  S1                  UK-B0228-G5-160-JZ  000     000     0
+UK-B0228-G5-160-JZ  S2                  UK-B0228-G5-160-JZ  000     000     0
+UK-B0228-G5-160-JZ  S3                  UK-B0228-G5-160-JZ  000     000     0
+UK-B0228-G5-160-JZ  S4                  UK-B0228-G5-160-JZ  000     000     0
+UK-B0228-G5-160-JZ  S5                  UK-B0228-G5-160-JZ  000     000     0
+XC6206P332MR        VR1                 SOT95P280X135-3N_12 000     000     0

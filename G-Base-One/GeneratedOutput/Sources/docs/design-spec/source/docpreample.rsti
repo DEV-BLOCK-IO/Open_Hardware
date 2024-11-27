@@ -1,0 +1,15 @@
+.. Don't change this file, instead edit content in files:
+   docpreamptxt.rsti
+
+:raw-latex:`\cleardoublepage\phantomsection`
+
+.. rubric:: PREAMBLE
+
+.. include:: docpreamptxt.rsti
+
+.. Local variables:
+   coding: utf-8
+   mode: text
+   mode: rst
+   End:
+   vim: fileencoding=utf-8 filetype=rst :

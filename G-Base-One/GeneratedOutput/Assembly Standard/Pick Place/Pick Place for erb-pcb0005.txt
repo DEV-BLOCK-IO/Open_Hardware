@@ -1,0 +1,94 @@
+Altium Designer Pick and Place Locations
+D:\GoogleDrive\Entwicklung\Circuitstudio_Workspace\E-Rubin_G1_Board_Base\GeneratedOutput\Assembly Standard\Pick Place\Pick Place for erb-pcb0005.txt
+
+========================================================================================================================
+File Design Information:
+
+Date:       27.11.24
+Time:       00:33
+Revision:   c1833218bf08c5b6502f4365e45a2337c48f8c2f
+Variant:    No variations
+Units used: mm
+
+Designator Center-X(mm) Center-Y(mm) Layer       Rotation Comment            Footprint                  
+D9         97.3000      30.5000      TopLayer    180      1N4148W-7-F        SOD-123                    
+D8         91.7000      38.6000      TopLayer    180      1N4148W-7-F        SOD-123                    
+X66        89.7000      27.5700      TopLayer    0        "HDR 1x2"          CON_HEADER2.54_1x2W        
+X47        85.0000      63.5250      TopLayer    180      B2B-XH             JST_B2B-XH-A_(LF)(SN)      
+R24        82.0000      57.0000      TopLayer    180      DNP                RESC2012X70N               
+D10        82.0000      55.0000      TopLayer    180      1N4148W-7-F        SOD-123                    
+R23        86.9000      34.5000      TopLayer    180      0R                 RESC1608X55N               
+R22        86.9000      32.8000      TopLayer    180      0R                 RESC1608X55N               
+R21        65.5000      36.6000      TopLayer    0        0R                 RESC1608X55N               
+R20        76.8000      36.8000      TopLayer    90       0R                 RESC1608X55N               
+R19        86.3000      22.3000      TopLayer    270      0R                 RESC1608X55N               
+R18        88.0000      22.3000      TopLayer    90       0R                 RESC1608X55N               
+L1         71.0000      62.0000      TopLayer    180      2u2                INDP5050X39N               
+NPN8       6.0000       60.0000      BottomLayer 90       FID                Fiducial_1mm               
+NPN7       7.0000       6.0000       BottomLayer 90       FID                Fiducial_1mm               
+NPN6       98.0000      59.0000      BottomLayer 90       FID                Fiducial_1mm               
+NPN5       95.0000      8.0000       BottomLayer 90       FID                Fiducial_1mm               
+R1         67.8000      3.2000       TopLayer    0        100k               RESC2012X70N               
+C8         89.4000      1.2000       TopLayer    0        100n               CAPC1608X95N               
+C4         82.0000      1.2000       TopLayer    0        100n               CAPC1608X95N               
+C2         75.1000      1.3000       TopLayer    0        100n               CAPC1608X95N               
+C1         67.8000      1.3000       TopLayer    0        100n               CAPC1608X95N               
+X44        96.4875      35.5000      TopLayer    180      10118193-0001LF    USB-MICRO-B-RA-SMD-PIP     
+X46        96.4875      25.4000      TopLayer    180      10118193-0001LF    USB-MICRO-B-RA-SMD-PIP     
+X45        95.0000      53.1050      TopLayer    90       FTSH-107-01-L-DV-K HDR_2X5-SMD-1.27MM-K       
+TP3        77.5000      21.5000      TopLayer    90       "TP 0.7mm"         TP_0.7mm                   
+TP2        77.5000      24.0000      TopLayer    90       "TP 0.7mm"         TP_0.7mm                   
+R16        78.8000      29.7000      TopLayer    90       33k                RESC1608X55AN              
+R17        80.5000      29.7000      TopLayer    270      22k                RESC1608X55AN              
+R15        78.8000      26.9000      TopLayer    90       1k                 RESC1608X55AN              
+C11        86.2000      27.1000      TopLayer    180      100n               CAPC1608X95N               
+C12        86.2000      28.8000      TopLayer    180      4u7                CAPC1608X95N               
+C13        83.9000      29.7000      TopLayer    270      100n               CAPC1608X95N               
+C14        82.2000      29.7000      TopLayer    270      4u7                CAPC1608X95N               
+X41        71.1700      57.1000      TopLayer    270      "HDR 1x2"          CON_HEADER2.54_1X2W        
+NPN2       7.0000       6.0000       TopLayer    90       FID                Fiducial_1mm               
+NPN1       96.0000      8.0000       TopLayer    90       FID                Fiducial_1mm               
+X26        32.3400      33.2300      TopLayer    90       "HDR 1x6"          61300611821_NO             
+X34        29.8000      33.2300      TopLayer    90       "HDR 1x6"          61300611821_NO             
+X33        57.8400      33.2300      TopLayer    90       "HDR 1x6"          61300611821_NO             
+X2         43.7700      42.5200      TopLayer    180      "HDR 1x12"         61301211821_NO             
+X1         43.7700      23.9400      TopLayer    0        "HDR 1x12"         61301211821_NO             
+C10        65.1000      60.6000      TopLayer    270      22u                CAPAE4643X54M              
+C9         77.0000      60.5000      TopLayer    270      22u                CAPAE4643X54M              
+C5         88.9000      41.6000      TopLayer    90       1uF                CAPC2012X145N              
+C6         91.9000      44.6000      TopLayer    180      1uF                CAPC2012X145N              
+D5         96.5000      46.4000      TopLayer    180      RED                WL-SMCW_0805               
+D3         82.0000      18.3000      TopLayer    0        RED                WL-SMCW_0805               
+D4         89.2000      18.3000      TopLayer    0        RED                WL-SMCW_0805               
+D1         68.0000      18.4000      TopLayer    0        RED                WL-SMCW_0805               
+D2         75.1000      18.3000      TopLayer    0        RED                WL-SMCW_0805               
+NPN3       7.0000       60.0000      TopLayer    90       FID                Fiducial_1mm               
+NPN4       89.0000      53.0000      TopLayer    90       FID                Fiducial_1mm               
+R10        96.4000      44.7000      TopLayer    180      560R               RESC1608X55N               
+R14        89.4000      3.1000       TopLayer    0        100k               RESC2012X70N               
+R9         89.2000      16.2000      TopLayer    180      560R               RESC1608X55N               
+R4         75.1000      16.3000      TopLayer    180      560R               RESC1608X55N               
+R3         68.0000      16.3000      TopLayer    180      560R               RESC1608X55N               
+R7         82.0000      16.3000      TopLayer    180      560R               RESC1608X55N               
+R8         82.1000      3.1000       TopLayer    0        100k               RESC2012X70N               
+R2         75.1000      3.2000       TopLayer    0        100k               RESC2012X70N               
+S2         75.0000      9.5000       TopLayer    90       UK-B0228-G5-160-JZ UK-B0228-G5-160-JZ         
+S1         67.9000      9.5000       TopLayer    90       UK-B0228-G5-160-JZ UK-B0228-G5-160-JZ         
+S5         68.0000      26.5000      TopLayer    270      UK-B0228-G5-160-JZ UK-B0228-G5-160-JZ         
+S4         89.3000      9.4000       TopLayer    90       UK-B0228-G5-160-JZ UK-B0228-G5-160-JZ         
+S3         82.1000      9.4000       TopLayer    90       UK-B0228-G5-160-JZ UK-B0228-G5-160-JZ         
+X25        55.2000      38.3100      TopLayer    270      "HDR 1x2"          61300211821_NO             
+X42        74.0000      27.2300      TopLayer    180      "HDR 1x2"          CON_HEADER2.54_1X2W        
+IC1        82.5000      25.5000      TopLayer    180      CP2102N-A02        SILABS_CP2102N-A02-GQFN20R 
+D7         92.5000      25.4000      TopLayer    270      ""                 DQA_R-PUSON-N10            
+L3         92.7000      22.3000      TopLayer    90       120R               INDC1608X95AN              
+VR1        91.6000      41.8000      TopLayer    180      XC6206P332MR       SOT95P280X135-3N_123       
+L2         92.8000      32.3000      TopLayer    90       120R               INDC1608X95AN              
+D6         92.5000      35.4000      TopLayer    90       ""                 DQA_R-PUSON-N10            
+C3         75.0000      36.8000      TopLayer    90       100nF              CAPC1608X95N               
+C7         63.3000      36.8000      TopLayer    90       100nF              CAPC1608X95N               
+R6         82.5000      42.0000      TopLayer    0        POT_50k_lin_9mm    PTV09                      
+R12        64.3000      34.3000      TopLayer    0        100k               RESC2012X70N               
+R5         76.0000      34.3000      TopLayer    0        100k               RESC2012X70N               
+R13        68.5000      42.0000      TopLayer    0        POT_50k_lin_9mm    PTV09                      
+X43        89.8000      33.7700      TopLayer    0        "HDR 1x2"          CON_HEADER2.54_1X2W        

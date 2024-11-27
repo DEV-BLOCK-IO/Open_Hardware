@@ -1,0 +1,23 @@
+.. Don't change this file, instead edit content in files:
+   docsumtxt.rsti
+
+:raw-latex:`\cleardoublepage\phantomsection`
+
+.. only:: html
+
+   .. sidebar:: SUMMARY
+
+      .. include:: docsumtxt.rsti
+
+.. only:: not html
+
+   .. rubric:: SUMMARY
+
+   .. include:: docsumtxt.rsti
+
+.. Local variables:
+   coding: utf-8
+   mode: text
+   mode: rst
+   End:
+   vim: fileencoding=utf-8 filetype=rst :

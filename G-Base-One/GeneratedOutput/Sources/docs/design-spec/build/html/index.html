@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta content="Sphinx 7.3.7" name="producer" />
+<meta content="Sphinx 7.3.7" name="creator" />
+<meta content="alpha-board GmbH" name="publisher" />
+<meta content="Design Specification of the EH-Türwächter nextGen." name="subject" />
+<meta content="GfS,Design Specification,EH-Türwächter nextGen" name="keywords" />
+<meta content="alpha-board GmbH" name="author" />
+<meta content="2023‒2024 alpha-board GmbH" name="copyright" />
+<meta content="preliminary (:emphasis:`some mature, much in progress`)" name="docstat" />
+<meta content="GfS" name="docnumb" />
+<meta content="EH-Türwächter nextGen" name="project" />
+<meta content="EH-Türwächter nextGen 0.x" name="title" />
+<meta content="Design Specification" name="subtitle" />
+<meta content="0.0.0" name="version" />
+<meta content="0.0.0-invalid+unknown" name="release" />
+<meta content="00000000" name="identify" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta content="EH-Türwächter nextGen 0.x–Design Specification" name="topic" />
+    
+  <title>EH-Türwächter nextGen 0.x–Design Specification &mdash; Design Specification EH-Türwächter nextGen 0.x</title>
+  
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="_static/graphviz.css?v=fd3f3429" />
+      <link rel="stylesheet" type="text/css" href="_static/css/tweaks-sphinx_rtd_theme.css?v=6a18d337" />
+
+  
+    <link rel="shortcut icon" href="_static/alpha-board-favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=98c1a3ee"></script>
+        <script src="_static/doctools.js?v=9a2dae69"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="1. PCB" href="pcb.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="#" class="icon icon-home">
+            EH-Türwächter nextGen
+              <img src="_static/alpha-board-logo-white.svg" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                0.0.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+    
+              <p class="caption" role="heading"><span class="caption-text">Table of Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="pcb.html">1. PCB</a></li>
+<li class="toctree-l1"><a class="reference internal" href="system-components.html">2. System Components</a></li>
+<li class="toctree-l1"><a class="reference internal" href="system-integration.html">3. System Integration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hardware-layout.html">4. Hardware Layout</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Appendices</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="appendix.html">PCB-A Parts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="appendix.html#general-information">General Information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="glossary.html">Glossary</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Lists and References</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="acronyms.html">Acronyms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="indexlol.html">Listings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="indexlot.html">List of Tables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="indexlof.html">List of Figures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="indexloe.html">List of Equations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="indexlod.html">List of Downloads</a></li>
+<li class="toctree-l1"><a class="reference internal" href="indexloi.html">List of Issues</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bibliography.html">Bibliography</a></li>
+</ul>
+
+    <ul><li class="toctree-l1">
+        <a class="reference internal"
+           href="genindex.html">Index</a>
+    </li></ul>
+  
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">EH-Türwächter nextGen</a>
+      </nav>
+
+      <div class="wy-nav-content">
+    
+
+<div class="rst-content style-external-links">
+
+  <dl class="field-list simple">
+    <dt class="field-odd" style="line-height: unset;">EH-Türwächter nextGen 0.x</dt>
+    <dd class="field-odd" style="line-height: unset;">Design Specification</dd>
+    <dt class="field-even" style="line-height: unset;">Document Number</dt>
+    <dd class="field-even" style="line-height: unset;">GfS</dd>
+    <dt class="field-odd" style="line-height: unset;">Revision (VCS)</dt>
+    <dd class="field-odd" style="line-height: unset;">0.0.0-invalid+unknown (00000000)</dd>
+  </dl>
+</div>
+    
+        <div class="rst-content style-external-links">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="#" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">EH-Türwächter nextGen 0.x–Design Specification</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="title-subtitle">
+<span id="home"></span><h1>EH-Türwächter nextGen 0.x–Design Specification<a class="headerlink" href="#title-subtitle" title="Link to this heading"></a></h1>
+<p></p>
+<aside class="sidebar">
+<p class="sidebar-title">SUMMARY</p>
+<dl class="field-list">
+<dt class="field-odd">Abstract<span class="colon">:</span></dt>
+<dd class="field-odd"><p>This document is an effort by alpha-board GmbH
+and aims to improve technical understanding und usage of describe
+piece of hardware. <em>In short words:</em> Design Specification of the EH-Türwächter nextGen.</p>
+<p class="rubric">Involved Components</p>
+</dd>
+<dt class="field-even">Audience<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p>Product Owners / Architects</p></li>
+<li><p>Hard- and Software Developers</p></li>
+<li><p>Integrators and Testers</p></li>
+</ul>
+</dd>
+<dt class="field-odd">Status<span class="colon">:</span></dt>
+<dd class="field-odd"><p>preliminary (<em>some mature, much in progress</em>)</p>
+</dd>
+<dt class="field-even">Version<span class="colon">:</span></dt>
+<dd class="field-even"><p>0.0.0</p>
+</dd>
+<dt class="field-odd">Release<span class="colon">:</span></dt>
+<dd class="field-odd"><p>0.0.0-invalid+unknown</p>
+</dd>
+<dt class="field-even">Date<span class="colon">:</span></dt>
+<dd class="field-even"><p>Oct 29, 2024</p>
+</dd>
+<dt class="field-odd">Authors<span class="colon">:</span></dt>
+<dd class="field-odd"><p>alpha-board GmbH</p>
+<ul class="simple">
+<li><p>Manuel Rubin &lt;<a class="reference external" href="mailto:manuel&#46;rubin&#37;&#52;&#48;alpha-board&#46;de">manuel<span>&#46;</span>rubin<span>&#64;</span>alpha-board<span>&#46;</span>de</a>&gt;</p></li>
+</ul>
+</dd>
+<dt class="field-even">Copyright<span class="colon">:</span></dt>
+<dd class="field-even"><p>Copyright © 2023‒2024 alpha-board GmbH — All rights reserved.</p>
+</dd>
+<dt class="field-odd">License<span class="colon">:</span></dt>
+<dd class="field-odd"><p>N/A</p>
+</dd>
+<dt class="field-even">Credits<span class="colon">:</span></dt>
+<dd class="field-even"><p>See the file <a class="reference download internal" download="" href="_downloads/e5f53fee4717a20069da09aa7a0f614d/CREDITS"><code class="xref download docutils literal notranslate"><span class="pre">CREDITS</span></code></a> that comes with the documentation for a list of
+all well known contributors.</p>
+</dd>
+<dt class="field-odd">Organization<span class="colon">:</span></dt>
+<dd class="field-odd"><p>alpha-board GmbH</p>
+</dd>
+<dt class="field-even">Contact<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="mailto:info&#37;&#52;&#48;alpha-board&#46;de">info<span>&#64;</span>alpha-board<span>&#46;</span>de</a></p>
+</dd>
+<dt class="field-odd">Address<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Berlin, Deutschland</p>
+</dd>
+</dl>
+<img alt="The alpha-board logo." class="align-right" src="_images/alpha-board-logo-transparent.svg" /></aside>
+<p></p>
+<p class="rubric">PREAMBLE</p>
+<p class="centered rubric">EH-Türwächter nextGen</p>
+<p>This document specifies the hardware design of the EH-Türwächter nextGen Revision
+0.0.0. It includes the detailed description of the different schematic
+sections, their intention and usage, as well as hints for the integration
+and interaction with other corresponding assemblies. At appropriate points,
+requirements and recommendations for the BSP development will be given.</p>
+<p>For easier creation, editing and maintenance, this documentation is written
+using the <a class="reference internal" href="glossary/common-terms.html#term-reStructuredText"><span class="xref std std-term">reStructuredText</span></a> syntax and processed using the <a class="reference internal" href="glossary/common-terms.html#term-Sphinx"><span class="xref std std-term">Sphinx</span></a> text
+processor. The presentation and distribution in <a class="reference internal" href="glossary/technologies.html#term-HTML"><span class="xref std std-term">HTML</span></a> or <a class="reference internal" href="glossary/technologies.html#term-PDF"><span class="xref std std-term">PDF</span></a> formats are
+only a result of processing with Sphinx from the underlying reStructuredText
+sources.</p>
+<p>Thus, the methodology of “Programmable Documentation” is applied here.</p>
+<p></p>
+<div class="toctree-wrapper compound">
+</div>
+<p></p>
+<div class="toctree-wrapper compound">
+</div>
+<div class="toctree-wrapper compound">
+</div>
+<p></p>
+<p class="rubric">VERSION HISTORY</p>
+<table class="longtable docutils align-default" id="id4">
+<caption><span class="caption-number">Table 17 </span><span class="caption-text">EH-Türwächter nextGen Design and Documentation Revisions</span><a class="headerlink" href="#id4" title="Link to this table"></a></caption>
+<colgroup>
+<col style="width: 15.0%" />
+<col style="width: 50.0%" />
+<col style="width: 20.0%" />
+<col style="width: 15.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head stub"><p>Version</p></th>
+<th class="head"><p>Change</p></th>
+<th class="head"><p>Passed</p></th>
+<th class="head"><p>Date</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><th class="stub"><p><a class="reference external" href="https://afs-vcs-eu1.365.altium.com/git/38F839AD-F72F-4E66-A7A7-7EF7D4B25DB2.git">master</a></p></th>
+<td><p><strong>change:</strong> improve <em>Desing Specification (RST)</em></p></td>
+<td><p>alpha-board GmbH</p></td>
+<td><p><em>today</em></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="pcb.html" class="btn btn-neutral float-right" title="1. PCB" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023‒2024 alpha-board GmbH.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+  
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

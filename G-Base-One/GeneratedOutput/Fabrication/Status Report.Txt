@@ -1,0 +1,25 @@
+Output: Gerber Files
+Type  : Gerber
+From  : Variant [[No Variations]] of PCB Document [erb-pcb0005.PcbDoc]
+   Generated File[erb-pcb0005.GTO]
+   Generated File[erb-pcb0005.GTP]
+   Generated File[erb-pcb0005.GTS]
+   Generated File[erb-pcb0005.GTL]
+   Generated File[erb-pcb0005.G1]
+   Generated File[erb-pcb0005.G2]
+   Generated File[erb-pcb0005.GBL]
+   Generated File[erb-pcb0005.GBS]
+   Generated File[erb-pcb0005.GBO]
+   Generated File[erb-pcb0005.GM1]
+   Generated File[erb-pcb0005.GKO]
+   Generated File[erb-pcb0005.GD1]
+   Generated File[erb-pcb0005.GM]
+   Generated File[erb-pcb0005.RUL]
+   Generated File[erb-pcb0005.EXTREP]
+   Generated File[erb-pcb0005.REP]
+
+
+Files Generated   : 16
+Documents Printed : 0
+
+Finished Output Generation At 00:33:22 On 27.11.2024

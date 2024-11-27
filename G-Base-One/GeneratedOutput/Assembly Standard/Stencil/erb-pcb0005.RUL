@@ -1,0 +1,5 @@
+DRC Rules Export File for PCB: D:\GoogleDrive\Entwicklung\Circuitstudio_Workspace\E-Rubin_G1_Board_Base\erb-pcb0005.PcbDoc
+RuleKind=SolderMaskExpansion|RuleName=SolderMaskExpansion|Scope=Board|Minimum=1.97
+RuleKind=Width|RuleName=Width|Scope=Board|Minimum=5.51
+RuleKind=Clearance|RuleName=Clearance|Scope=Board|Minimum=5.91
+RuleKind=ShortCircuit|RuleName=ShortCircuit|Scope=Board|Allowed=0

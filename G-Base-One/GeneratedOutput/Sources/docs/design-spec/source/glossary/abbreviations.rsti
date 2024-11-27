@@ -1,0 +1,24 @@
+.. Never add or change more than term replacements (ex. LaTeX formatting).
+
+.. Glossary Replacements:
+
+.. Abbreviations:
+
+.. |ANSI|       replace:: :abbr:`ANSI (American National Standards Institute)`
+.. |BibTeXML|   replace:: :abbr:`BibTeXML (BibTeX as XML)`
+.. |IEC|        replace:: :abbr:`IEC (International Electrotechnical Commission)`
+.. |ISO|        replace:: :abbr:`ISO (International Organization for Standardization)`
+.. |OMG|        replace:: :abbr:`OMG (Object Management Group)`
+.. |PEP|        replace:: :abbr:`PEP (Python Enhancement Proposal)`
+.. |PS|         replace:: :abbr:`PS (PostScript)`
+.. |SMIL|       replace:: :abbr:`SMIL (Synchronized Multimedia Integration Language)`
+.. |W3C|        replace:: :abbr:`W3C (World Wide Web Consortium)`
+.. |WWW|        replace:: :abbr:`WWW (World Wide Web)`
+.. |YAML|       replace:: :abbr:`YAML (YAML Ain't Markup Language)`
+
+.. Local variables:
+   coding: utf-8
+   mode: text
+   mode: rst
+   End:
+   vim: fileencoding=utf-8 filetype=rst :

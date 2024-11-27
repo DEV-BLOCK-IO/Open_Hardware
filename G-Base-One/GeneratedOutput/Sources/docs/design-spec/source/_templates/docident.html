@@ -1,0 +1,15 @@
+{# TEMPLATE VAR SETTINGS #}
+{% if theme_style_external_links|tobool %}
+<div class="rst-content style-external-links">
+{% else %}
+<div class="rst-content">
+{% endif %}
+  <dl class="field-list simple">
+    <dt class="field-odd" style="line-height: unset;">{{ document_title }}</dt>
+    <dd class="field-odd" style="line-height: unset;">{{ document_subtitle }}</dd>
+    <dt class="field-even" style="line-height: unset;">Document Number</dt>
+    <dd class="field-even" style="line-height: unset;">{{ document_number }}</dd>
+    <dt class="field-odd" style="line-height: unset;">Revision (VCS)</dt>
+    <dd class="field-odd" style="line-height: unset;">{{ document_revision }} ({{ document_vcs }})</dd>
+  </dl>
+</div>

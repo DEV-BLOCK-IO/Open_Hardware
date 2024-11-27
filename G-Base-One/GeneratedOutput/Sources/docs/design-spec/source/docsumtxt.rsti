@@ -1,0 +1,34 @@
+.. Don't change this file, instead edit content in files:
+   docmeta.rsti, docaudience.rsti, and docinvolcomps.rsti
+
+:Abstract:      |dm_abstract|
+
+                .. include:: docinvolcomps.rsti
+
+:Audience:      .. include:: docaudience.rsti
+:Status:        |dm_status|
+:Version:       |version|
+:Release:       |release|
+:Date:          |today|
+:Authors:       |dm_authors|
+
+				* |mar_contact|
+				
+
+:Copyright:     |dm_copyright|
+:License:       |dm_license|
+:Credits:       |dm_credits|
+:Organization:  |dm_organization|
+:Contact:       |dm_contact|
+:Address:       |dm_address|
+
+.. image:: /_images/alpha-board-logo-transparent.*
+   :alt: The alpha-board logo.
+   :align: right
+
+.. Local variables:
+   coding: utf-8
+   mode: text
+   mode: rst
+   End:
+   vim: fileencoding=utf-8 filetype=rst :

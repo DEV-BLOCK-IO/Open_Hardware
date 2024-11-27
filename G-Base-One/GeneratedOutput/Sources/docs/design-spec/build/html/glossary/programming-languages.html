@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta content="Sphinx 7.3.7" name="producer" />
+<meta content="Sphinx 7.3.7" name="creator" />
+<meta content="alpha-board GmbH" name="publisher" />
+<meta content="Design Specification of the EH-Türwächter nextGen." name="subject" />
+<meta content="GfS,Design Specification,EH-Türwächter nextGen" name="keywords" />
+<meta content="alpha-board GmbH" name="author" />
+<meta content="2023‒2024 alpha-board GmbH" name="copyright" />
+<meta content="preliminary (:emphasis:`some mature, much in progress`)" name="docstat" />
+<meta content="GfS" name="docnumb" />
+<meta content="EH-Türwächter nextGen" name="project" />
+<meta content="EH-Türwächter nextGen 0.x" name="title" />
+<meta content="Design Specification" name="subtitle" />
+<meta content="0.0.0" name="version" />
+<meta content="0.0.0-invalid+unknown" name="release" />
+<meta content="00000000" name="identify" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta content="Programming Languages" name="topic" />
+    
+  <title>Programming Languages &mdash; Design Specification EH-Türwächter nextGen 0.x</title>
+  
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=fd3f3429" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/tweaks-sphinx_rtd_theme.css?v=6a18d337" />
+
+  
+    <link rel="shortcut icon" href="../_static/alpha-board-favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=98c1a3ee"></script>
+        <script src="../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Technologies" href="technologies.html" />
+    <link rel="prev" title="Common Terms" href="common-terms.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            EH-Türwächter nextGen
+              <img src="../_static/alpha-board-logo-white.svg" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                0.0.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+    
+              <p class="caption" role="heading"><span class="caption-text">Table of Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../pcb.html">1. PCB</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../system-components.html">2. System Components</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../system-integration.html">3. System Integration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hardware-layout.html">4. Hardware Layout</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Appendices</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../appendix.html">PCB-A Parts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendix.html#general-information">General Information</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../glossary.html">Glossary</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="common-terms.html">Common Terms</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Programming Languages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="technologies.html">Technologies</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Lists and References</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../acronyms.html">Acronyms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../indexlol.html">Listings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../indexlot.html">List of Tables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../indexlof.html">List of Figures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../indexloe.html">List of Equations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../indexlod.html">List of Downloads</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../indexloi.html">List of Issues</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../bibliography.html">Bibliography</a></li>
+</ul>
+
+    <ul><li class="toctree-l1">
+        <a class="reference internal"
+           href="../genindex.html">Index</a>
+    </li></ul>
+  
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">EH-Türwächter nextGen</a>
+      </nav>
+
+      <div class="wy-nav-content">
+    
+
+<div class="rst-content style-external-links">
+
+  <dl class="field-list simple">
+    <dt class="field-odd" style="line-height: unset;">EH-Türwächter nextGen 0.x</dt>
+    <dd class="field-odd" style="line-height: unset;">Design Specification</dd>
+    <dt class="field-even" style="line-height: unset;">Document Number</dt>
+    <dd class="field-even" style="line-height: unset;">GfS</dd>
+    <dt class="field-odd" style="line-height: unset;">Revision (VCS)</dt>
+    <dd class="field-odd" style="line-height: unset;">0.0.0-invalid+unknown (00000000)</dd>
+  </dl>
+</div>
+    
+        <div class="rst-content style-external-links">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../glossary.html">Glossary</a></li>
+      <li class="breadcrumb-item active">Programming Languages</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/glossary/programming-languages.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="programming-languages">
+<h1>Programming Languages<a class="headerlink" href="#programming-languages" title="Link to this heading"></a></h1>
+<dl class="glossary">
+<dt id="term-C">C<a class="headerlink" href="#term-C" title="Link to this term"></a></dt><dd><p><a class="reference external" href="http://www.open-std.org/jtc1/sc22/wg14/www/projects">C</a> is a general-purpose, imperative procedural computer programming
+language supporting structured programming, lexical variable scope, and
+recursion, with a static type system. It was designed to be compiled to
+provide low-level access to memory and language constructs that map
+efficiently to machine instructions, all with minimal runtime support.
+C has been standardized by the <abbr title="American National Standards Institute">ANSI</abbr> <em>X3J11</em> since 1989 (<strong>ANSI C</strong>) and
+by the <abbr title="International Organization for Standardization">ISO</abbr>/<abbr title="International Electrotechnical Commission">IEC</abbr> JTC1/SC22/WG14 (<strong>ISO C</strong>).</p>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/C (programming language)">English Wikipedia: C (programming language)</a></p></li>
+<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/Compatibility of C and C++">English Wikipedia: Compatibility of C and C++</a></p></li>
+<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/C18 (C standard revision)">English Wikipedia: C18 (C standard revision)</a>:
+standard ratified in 2018 as <strong>ISO/IEC 9899:2018</strong></p></li>
+<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/C11 (C standard revision)">English Wikipedia: C11 (C standard revision)</a>:
+standard ratified in 2011 as <em>ISO/IEC 9899:2011</em></p></li>
+<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/C99">English Wikipedia: C99</a>: standard ratified in 1999 as <em>ISO/IEC 9899:1999</em></p></li>
+<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/C95 (C version)">English Wikipedia: C95 (C version)</a>:
+Amendment 1 ratified in 1995 as <em>ISO/IEC 9899:1990/AMD1:1995</em></p></li>
+<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/C90 (C version)">English Wikipedia: C90 (C version)</a>:
+standard ratified in 1990 as <em>ISO/IEC 9899:1990</em></p></li>
+<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/C89 (C version)">English Wikipedia: C89 (C version)</a>:
+standard ratified in 1989 as <em>ANSI X3.159-1989</em></p></li>
+</ul>
+</div>
+</dd>
+<dt id="term-0">C++<a class="headerlink" href="#term-0" title="Link to this term"></a></dt><dd><p><a class="reference external" href="https://isocpp.org/">C++</a> is a general-purpose programming language as an extension of the
+<a class="reference internal" href="#term-C"><span class="xref std std-term">C</span></a> programming language, or <em>“C with Classes”</em>. Modern C++ implementations
+now has object-oriented, generic, and functional features in addition to
+facilities for low-level memory manipulation. C++ is standardized by the
+<abbr title="International Organization for Standardization">ISO</abbr>/<abbr title="International Electrotechnical Commission">IEC</abbr> JTC1/SC22/WG14 since 1998.</p>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/C++">English Wikipedia: C++</a></p></li>
+<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/Compatibility of C and C++">English Wikipedia: Compatibility of C and C++</a></p></li>
+<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/C++17">English Wikipedia: C++17</a>: standard ratified in 2017 as <strong>ISO/IEC 14882:2017</strong></p></li>
+<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/C++14">English Wikipedia: C++14</a>: standard ratified in 2014 as <em>ISO/IEC 14882:2014</em></p></li>
+<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/C++11">English Wikipedia: C++11</a>: standard ratified in 2011 as <em>ISO/IEC 14882:2011</em></p></li>
+<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/C++03">English Wikipedia: C++03</a>: standard ratified in 2003 as <em>ISO/IEC 14882:2003</em></p></li>
+<li><p>initially standardized in 1998 as <em>ISO/IEC 14882:1998</em></p></li>
+</ul>
+</div>
+</dd>
+<dt id="term-ES"><abbr title="ECMAScript">ES</abbr><a class="headerlink" href="#term-ES" title="Link to this term"></a></dt><dt id="term-ECMAScript">ECMAScript<a class="headerlink" href="#term-ECMAScript" title="Link to this term"></a></dt><dd><p><abbr title="ECMAScript">ES</abbr> is a general-purpose programming language,
+standardized by <a class="reference external" href="https://www.ecma-international.org/">Ecma International</a> since 1997 according to the
+document <a class="reference external" href="https://www.ecma-international.org/publications/standards/Ecma-262.htm">ECMA-262</a>. It is a <a class="reference internal" href="#term-JavaScript"><span class="xref std std-term">JavaScript</span></a> standard meant to ensure
+the interoperability of Web pages across different Web browsers.
+<abbr title="ECMAScript">ES</abbr> is standardized by the <abbr title="International Organization for Standardization">ISO</abbr>/<abbr title="International Electrotechnical Commission">IEC</abbr> JTC1/SC22
+since 1998.</p>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/ECMAScript">English Wikipedia: ECMAScript</a></p></li>
+<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/ECMAScript engine">English Wikipedia: ECMAScript engine</a></p></li>
+<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/List of ECMAScript engines">English Wikipedia: List of ECMAScript engines</a></p></li>
+<li><p>ES Edition 11: standard ratified in 2020 as <strong>ECMA-262-11:2020</strong></p></li>
+<li><p>ES Edition 5.1: standard ratified in 2011 as <em>ISO/IEC 16262:2011</em></p></li>
+<li><p>ES Edition 2: initially standardized in 1998 as <em>ISO/IEC 16262:1998</em></p></li>
+</ul>
+</div>
+</dd>
+<dt id="term-JS"><abbr title="JavaScript">JS</abbr><a class="headerlink" href="#term-JS" title="Link to this term"></a></dt><dt id="term-JavaScript">JavaScript<a class="headerlink" href="#term-JavaScript" title="Link to this term"></a></dt><dd><p><abbr title="JavaScript">JS</abbr> is a programming language that conforms to the
+<a class="reference internal" href="#term-ECMAScript"><span class="xref std std-term">ECMAScript</span></a> specification. JavaScript is high-level, often just-in-time
+compiled, and multi-paradigm. It has curly-bracket syntax, dynamic
+typing, prototype-based object-orientation, and first-class functions.</p>
+<p>Alongside <a class="reference internal" href="technologies.html#term-HTML"><span class="xref std std-term">HTML</span></a> and <a class="reference internal" href="technologies.html#term-CSS"><span class="xref std std-term">CSS</span></a>, JavaScript is one of the core technologies
+of the World Wide Web. JavaScript enables interactive web pages and is
+an essential part of web applications. The vast majority of websites use
+it for client-side page behavior, and all major web browsers have a
+dedicated JavaScript engine to execute it.</p>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/JavaScript">English Wikipedia: JavaScript</a></p></li>
+<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/JavaScript engine">English Wikipedia: JavaScript engine</a></p></li>
+<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/List of JavaScript engines">English Wikipedia: List of JavaScript engines</a></p></li>
+</ul>
+</div>
+</dd>
+<dt id="term-Python">Python<a class="headerlink" href="#term-Python" title="Link to this term"></a></dt><dd><p><a class="reference external" href="https://www.python.org/">Python</a> is an interpreted, high-level and general-purpose programming
+language. Python interpreters are available for many operating systems.
+A global community of programmers develops and maintains CPython, a free
+and open-source reference implementation. A non-profit organization, the
+Python Software Foundation, manages and directs resources for Python and
+CPython development.</p>
+<p>CPython is the reference implementation of Python. It is written in <a class="reference internal" href="#term-C"><span class="xref std std-term">C</span></a>,
+meeting the <a class="reference internal" href="#term-C"><span class="xref std std-term">C</span></a>89 standard with several select <a class="reference internal" href="#term-C"><span class="xref std std-term">C</span></a>99 features.
+Python’s development is conducted largely through the <abbr title="Python Enhancement Proposal">PEP</abbr> process, the
+primary mechanism for proposing major new features, collecting community
+input on issues and documenting Python design decisions. Python coding
+style is covered in <span class="target" id="index-0"></span><a class="pep reference external" href="https://peps.python.org/pep-0008/"><strong>PEP 8</strong></a>.</p>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/Python (programming language)">English Wikipedia: Python (programming language)</a></p></li>
+<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/CPython">English Wikipedia: CPython</a></p></li>
+<li><p><span id="id1">[<a class="reference internal" href="../bibliography.html#id7" title="Al Sweigart. Automate the boring stuff with Python : practical programming for total beginners. No Starch Press, San Francisco, United States of America, 2nd edition, 2019. ISBN 1593279922. URL: https://www.amazon.com/dp/1593279922 (visited on January 2021).">Swe19</a>]</span></p></li>
+<li><p><span id="id2">[<a class="reference internal" href="../bibliography.html#id8" title="Al Sweigart. Routineaufgaben mit Python automatisieren : Praktische Programmierlösungen für Einsteiger. Dpunkt.Verlag GmbH, Heidelberg, Germany, 2nd edition, 2020. ISBN 3864907535. URL: https://www.amazon.com/dp/3864907535 (visited on January 2021).">Swe20</a>]</span></p></li>
+</ul>
+</div>
+</dd>
+</dl>
+<p></p>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="common-terms.html" class="btn btn-neutral float-left" title="Common Terms" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="technologies.html" class="btn btn-neutral float-right" title="Technologies" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023‒2024 alpha-board GmbH.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+  
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

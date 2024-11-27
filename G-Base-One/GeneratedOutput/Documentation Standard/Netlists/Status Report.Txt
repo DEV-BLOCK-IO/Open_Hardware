@@ -1,0 +1,11 @@
+Output: Calay Netlist
+Type  : CalayNetlist
+From  : Project [G-Base-1.PrjPcb]
+   Generated File[G-Base-1.NET]
+   Generated File[G-Base-1.PRT]
+
+
+Files Generated   : 2
+Documents Printed : 0
+
+Finished Output Generation At 00:33:31 On 27.11.2024

@@ -1,0 +1,38 @@
+.. Never add or change more than meta informations (ex. LaTeX formatting),
+   instead edit structure and formattings in files:
+   docpreample.rsti
+
+.. rst-class:: centered
+
+.. rubric:: |project|
+
+This document specifies the hardware design of the |project| Revision
+|version|. It includes the detailed description of the different schematic
+sections, their intention and usage, as well as hints for the integration
+and interaction with other corresponding assemblies. At appropriate points,
+requirements and recommendations for the BSP development will be given.
+
+For easier creation, editing and maintenance, this documentation is written
+using the |reStructuredText| syntax and processed using the |Sphinx| text
+processor. The presentation and distribution in |HTML| or |PDF| formats are
+only a result of processing with Sphinx from the underlying reStructuredText
+sources.
+
+Thus, the methodology of "Programmable Documentation" is applied here.
+
+.. A ReadTheDocs server performs the Sphinx processing. Its results are
+.. considered to be official and can be accessed using the following links:
+
+
+.. todo add this after release
+
+.. * |RTDS_LATEST|
+.. * |RTDS_STABLE|
+.. * |RTDS_1_1_0|
+
+.. Local variables:
+   coding: utf-8
+   mode: text
+   mode: rst
+   End:
+   vim: fileencoding=utf-8 filetype=rst :

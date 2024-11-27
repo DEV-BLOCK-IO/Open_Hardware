@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta content="Sphinx 7.3.7" name="producer" />
+<meta content="Sphinx 7.3.7" name="creator" />
+<meta content="alpha-board GmbH" name="publisher" />
+<meta content="Design Specification of the EH-Türwächter nextGen." name="subject" />
+<meta content="GfS,Design Specification,EH-Türwächter nextGen" name="keywords" />
+<meta content="alpha-board GmbH" name="author" />
+<meta content="2023‒2024 alpha-board GmbH" name="copyright" />
+<meta content="preliminary (:emphasis:`some mature, much in progress`)" name="docstat" />
+<meta content="GfS" name="docnumb" />
+<meta content="EH-Türwächter nextGen" name="project" />
+<meta content="EH-Türwächter nextGen 0.x" name="title" />
+<meta content="Design Specification" name="subtitle" />
+<meta content="0.0.0" name="version" />
+<meta content="0.0.0-invalid+unknown" name="release" />
+<meta content="00000000" name="identify" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta content="None" name="topic" />
+    
+  <title>X19 - BOOT0 &mdash; Design Specification EH-Türwächter nextGen 0.x</title>
+  
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=fd3f3429" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/tweaks-sphinx_rtd_theme.css?v=6a18d337" />
+
+  
+    <link rel="shortcut icon" href="../../_static/alpha-board-favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=98c1a3ee"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="X1 - Bus-Connector" href="_autogen__X1_Bus-Connector.html" />
+    <link rel="prev" title="X13 - GND" href="_autogen__X13_GND.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            EH-Türwächter nextGen
+              <img src="../../_static/alpha-board-logo-white.svg" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                0.0.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+    
+              <p class="caption" role="heading"><span class="caption-text">Table of Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../pcb.html">1. PCB</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../system-components.html">2. System Components</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../system-integration.html">3. System Integration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware-layout.html">4. Hardware Layout</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Appendices</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../appendix.html">PCB-A Parts</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../appendix/actions.html">Buttons and Switches</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../appendix/signaling.html">Lights and Signals</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../appendix/connectors.html">Connectors</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="_autogen__X13_GND.html">X13 - GND</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">X19 - BOOT0</a></li>
+<li class="toctree-l3"><a class="reference internal" href="_autogen__X1_Bus-Connector.html">X1 - Bus-Connector</a></li>
+<li class="toctree-l3"><a class="reference internal" href="_autogen__X5_Programming.html">X5 - Programming</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../appendix/setups.html">Jumper and Test Points</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../appendix/miscellaneous.html">Miscellaneous</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../appendix.html#general-information">General Information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../glossary.html">Glossary</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Lists and References</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../acronyms.html">Acronyms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../indexlol.html">Listings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../indexlot.html">List of Tables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../indexlof.html">List of Figures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../indexloe.html">List of Equations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../indexlod.html">List of Downloads</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../indexloi.html">List of Issues</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../bibliography.html">Bibliography</a></li>
+</ul>
+
+    <ul><li class="toctree-l1">
+        <a class="reference internal"
+           href="../../genindex.html">Index</a>
+    </li></ul>
+  
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">EH-Türwächter nextGen</a>
+      </nav>
+
+      <div class="wy-nav-content">
+    
+
+<div class="rst-content style-external-links">
+
+  <dl class="field-list simple">
+    <dt class="field-odd" style="line-height: unset;">EH-Türwächter nextGen 0.x</dt>
+    <dd class="field-odd" style="line-height: unset;">Design Specification</dd>
+    <dt class="field-even" style="line-height: unset;">Document Number</dt>
+    <dd class="field-even" style="line-height: unset;">GfS</dd>
+    <dt class="field-odd" style="line-height: unset;">Revision (VCS)</dt>
+    <dd class="field-odd" style="line-height: unset;">0.0.0-invalid+unknown (00000000)</dd>
+  </dl>
+</div>
+    
+        <div class="rst-content style-external-links">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../appendix.html">PCB-A Parts</a></li>
+          <li class="breadcrumb-item"><a href="../../appendix/connectors.html">Connectors</a></li>
+      <li class="breadcrumb-item active">X19 - BOOT0</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/_autogen/CAD/_autogen__X19_BOOT0.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="x19-boot0">
+<h1>X19 - BOOT0<a class="headerlink" href="#x19-boot0" title="Link to this heading"></a></h1>
+<div class="line-block">
+<div class="line"><strong>Information</strong>:</div>
+<div class="line">Manufacturer: Wurth Elektronik</div>
+<div class="line">Part Number: 61300211121</div>
+</div>
+<div class="line-block">
+<div class="line"><strong>Description</strong>:</div>
+<div class="line">Board-to-Board-Steckverbinder, 2.54 mm, 2 Kontakt(e), Stiftleiste 1-Reihig</div>
+</div>
+<table class="longtable docutils align-center" id="id1">
+<caption><span class="caption-number">Table 13 </span><span class="caption-text">X19 - BOOT0</span><a class="headerlink" href="#id1" title="Link to this table"></a></caption>
+<colgroup>
+<col style="width: 7.7%" />
+<col style="width: 46.2%" />
+<col style="width: 46.2%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head stub"><p>Pin</p></th>
+<th class="head"><p>Net name</p></th>
+<th class="head"><p>Note</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><th class="stub"><p>1</p></th>
+<td><p>Vsys_M</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><th class="stub"><p>2</p></th>
+<td><p>BOOT0</p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="_autogen__X13_GND.html" class="btn btn-neutral float-left" title="X13 - GND" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="_autogen__X1_Bus-Connector.html" class="btn btn-neutral float-right" title="X1 - Bus-Connector" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023‒2024 alpha-board GmbH.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+  
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

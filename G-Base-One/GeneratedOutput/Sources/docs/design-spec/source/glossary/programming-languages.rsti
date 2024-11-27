@@ -1,0 +1,27 @@
+.. Never add or change more than term replacements (ex. LaTeX formatting).
+
+.. Glossary Replacements:
+
+.. Programming Languages:
+
+.. |C|                          replace:: :term:`C`
+.. |C++|                        replace:: :term:`C++`
+.. |C/C++|                      replace:: |C|/|C++|
+.. |ES|                         replace:: :term:`ES`
+.. |ECMAScript|                 replace:: :term:`ECMAScript`
+.. |JS|                         replace:: :term:`JS`
+.. |JavaScript|                 replace:: :term:`JavaScript`
+.. |Python|                     replace:: :term:`Python`
+
+.. _`C`: http://www.open-std.org/jtc1/sc22/wg14/www/projects
+.. _`C++`: https://isocpp.org/
+.. _`Ecma International`: https://www.ecma-international.org/
+.. _`ECMA-262`: https://www.ecma-international.org/publications/standards/Ecma-262.htm
+.. _`Python`: https://www.python.org/
+
+.. Local variables:
+   coding: utf-8
+   mode: text
+   mode: rst
+   End:
+   vim: fileencoding=utf-8 filetype=rst :

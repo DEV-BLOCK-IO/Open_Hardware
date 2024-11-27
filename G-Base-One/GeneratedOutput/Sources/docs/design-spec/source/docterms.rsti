@@ -1,0 +1,240 @@
+.. Don't change this file, instead edit content in files:
+   glossary/*.rsti
+
+.. include:: /glossary/common-terms.rsti
+.. include:: /glossary/programming-languages.rsti
+.. include:: /glossary/technologies.rsti
+.. include:: /glossary/abbreviations.rsti
+
+.. Local Abbreviations:
+
+.. generally
+
+.. |ADC|        replace:: :abbr:`ADC (Analog to Digital Converter)`
+.. |ADC_|       replace:: :abbr:`Analog to Digital Converter (ADC)`
+.. |AFE|        replace:: :abbr:`AFE (Analog Frontend)`
+.. |AFE_|       replace:: :abbr:`Analog Frontend (AFE)`
+.. |AVB|        replace:: :abbr:`AVB (Audio Video Bridging)`
+.. |AVB_|       replace:: :abbr:`Audio Video Bridging (AVB)`
+.. |BL|         replace:: :abbr:`BL (Background Light)`
+.. |BL_|        replace:: :abbr:`Background Light (BL)`
+.. |BT|         replace:: :abbr:`BT (Bluetooth)`
+.. |BT_|        replace:: :abbr:`Bluetooth (BT)`
+.. |BTLE|       replace:: :abbr:`BTLE (Bluetooth Low Energy)`
+.. |BTLE_|      replace:: :abbr:`Bluetooth Low Energy (BTLE)`
+.. |CAN|        replace:: :abbr:`CAN (Controller Area Network)`
+.. |CAN_|       replace:: :abbr:`Controller Area Network (CAN)`
+.. |CAN20AB|    replace:: :abbr:`CAN20AB (CAN 2.0A and B)`
+.. |CAN20AB_|   replace:: :abbr:`CAN 2.0A and B (CAN20AB)`
+.. |CAN20BFD|   replace:: :abbr:`CAN20BFD (CAN 2.0B / FD)`
+.. |CAN20BFD_|  replace:: :abbr:`CAN 2.0B / FD (CAN20BFD)`
+.. |CCM|        replace:: :abbr:`CCM (Clock Control Module)`
+.. |CCM_|       replace:: :abbr:`Clock Control Module (CCM)`
+.. |CPU|        replace:: :abbr:`CPU (Central Processing Unit)`
+.. |CPU_|       replace:: :abbr:`Central Processing Unit (CPU)`
+.. |CRC|        replace:: :abbr:`CRC (Cyclic Redundancy Check)`
+.. |CRC_|       replace:: :abbr:`Cyclic Redundancy Check (CRC)`
+.. |CS|         replace:: :abbr:`CS (Chip Select)`
+.. |CS_|        replace:: :abbr:`Chip Select (CS)`
+.. |CSI|        replace:: :abbr:`CSI (Camera Serial Interface)`
+.. |CSI_|       replace:: :abbr:`Camera Serial Interface (CSI)`
+.. |CSV|        replace:: :abbr:`CSV (Comma-Separated Values)`
+.. |CSV_|       replace:: :abbr:`Comma-Separated Values (CSV)`
+.. |DAC|        replace:: :abbr:`DAC (Digital to Analog Converter)`
+.. |DAC_|       replace:: :abbr:`Digital to Analog Converter (DAC)`
+.. |DDR|        replace:: :abbr:`DDR (Double Data Rate)`
+.. |DDR_|       replace:: :abbr:`Double Data Rate (DDR)`
+.. |DDRC|        replace:: :abbr:`DDRC (DDR Controller)`
+.. |DDRC_|       replace:: :abbr:`DDR Controller (DDRC)`
+.. |DMA|        replace:: :abbr:`DMA (Direct Memory Access)`
+.. |DMA_|       replace:: :abbr:`Direct Memory Access (DMA)`
+.. |DRAM|       replace:: :abbr:`DRAM (Dynamic RAM)`
+.. |DRAM_|      replace:: :abbr:`Dynamic RAM (DRAM)`
+.. |DSI|        replace:: :abbr:`DSI (Display Serial Interface)`
+.. |DSI_|       replace:: :abbr:`Display Serial Interface (DSI)`
+.. |DTS|        replace:: :abbr:`DTS (Device Tree Source)`
+.. |DTS_|       replace:: :abbr:`Device Tree Source (DTS)`
+.. |ECSPI|      replace:: :abbr:`ECSPI (Enhanced Configurable SPI)`
+.. |ECSPI_|     replace:: :abbr:`Enhanced Configurable SPI (ECSPI)`
+.. |eFuse|      replace:: :abbr:`eFuse (Electronic Fuse)`
+.. |eFuse_|     replace:: :abbr:`Electronic Fuse (eFuse)`
+.. |eMMC|       replace:: :abbr:`eMMC (Embedded MMC)`
+.. |eMMC_|      replace:: :abbr:`Embedded MMC (eMMC)`
+.. |ENET|       replace:: :abbr:`ENET (Ethernet)`
+.. |ENET_|      replace:: :abbr:`Ethernet (ENET)`
+.. |eLCDIF|     replace:: :abbr:`eLCDIF (Enhanced LCD Interface)`
+.. |eLCDIF_|    replace:: :abbr:`Enhanced LCD Interface (eLCDIF)`
+.. |FD|         replace:: :abbr:`FD (Flexible Data-Rate)`
+.. |FD_|        replace:: :abbr:`Flexible Data-Rate (FD)`
+.. |FIFO|       replace:: :abbr:`FIFO (First-In/First-Out)`
+.. |FIFO_|      replace:: :abbr:`First-In/First-Out (FIFO)`
+.. |FS|         replace:: :abbr:`FS (Full-Speed)`
+.. |FS_|        replace:: :abbr:`Full-Speed (FS)`
+.. |FSM|        replace:: :abbr:`FSM (Finite State Machine)`
+.. |FSM_|       replace:: :abbr:`Finite State Machine (FSM)`
+.. |GMII|       replace:: :abbr:`GMII (Gigabit MII)`
+.. |GMII_|      replace:: :abbr:`Gigabit MII (GMII)`
+.. |GPC|        replace:: :abbr:`GPC (General Power Controller)`
+.. |GPC_|       replace:: :abbr:`General Power Controller (GPC)`
+.. |GPIO|       replace:: :abbr:`GPIO (General-Purpose Input/Output)`
+.. |GPIO_|      replace:: :abbr:`General-Purpose Input/Output (GPIO)`
+.. |GPU|        replace:: :abbr:`GPU (Graphics Processing Unit)`
+.. |GPU_|       replace:: :abbr:`Graphics Processing Unit (GPU)`
+.. |HS|         replace:: :abbr:`HS (High-Speed)`
+.. |HS_|        replace:: :abbr:`High-Speed (HS)`
+.. |I2C|        replace:: :abbr:`I²C/IIC (Inter-IC Bus)`
+.. |I2C_|       replace:: :abbr:`Inter-IC Bus (I²C/IIC)`
+.. |I2S|        replace:: :abbr:`I²S/IIS (Inter-IC Sound)`
+.. |I2S_|       replace:: :abbr:`Inter-IC Sound (I²S/IIS)`
+.. |ICMP|       replace:: :abbr:`ICMP (Internet Control Message Protocol)`
+.. |ICMP_|      replace:: :abbr:`Internet Control Message Protocol (ICMP)`
+.. |IP|         replace:: :abbr:`IP (Internet Protocol)`
+.. |IP_|        replace:: :abbr:`Internet Protocol (IP)`
+.. |JTAG|       replace:: :abbr:`JTAG (Joint Test Action Group)`
+.. |JTAG_|      replace:: :abbr:`Joint Test Action Group (JTAG)`
+.. |LAN|        replace:: :abbr:`LAN (Local Area Network)`
+.. |LAN_|       replace:: :abbr:`Local Area Network (LAN)`
+.. |LCD|        replace:: :abbr:`LCD (Liquid Crystal Display)`
+.. |LCD_|       replace:: :abbr:`Liquid Crystal Display (LCD)`
+.. |LDISC|      replace:: :abbr:`LDISC (Line Discipline)`
+.. |LDISC_|     replace:: :abbr:`Line Discipline (LDISC)`
+.. |LED|        replace:: :abbr:`LED (Light Emitting Diode)`
+.. |LED_|       replace:: :abbr:`Light Emitting Diode (LED)`
+.. |LS|         replace:: :abbr:`LS (Low-Speed)`
+.. |LS_|        replace:: :abbr:`Low-Speed (LS)`
+.. |MAC|        replace:: :abbr:`MAC (Media Access Control)`
+.. |MAC_|       replace:: :abbr:`Media Access Control (MAC)`
+.. |MCU|        replace:: :abbr:`MCU (Micro Controller Unit)`
+.. |MCU_|       replace:: :abbr:`Micro Controller Unit (MCU)`
+.. |MDI|        replace:: :abbr:`MDI (Medium-Dependent Interface)`
+.. |MDI_|       replace:: :abbr:`Medium-Dependent Interface (MDI)`
+.. |MDIO|       replace:: :abbr:`MDIO (Management Data Input/Output)`
+.. |MDIO_|      replace:: :abbr:`Management Data Input/Output (MDIO)`
+.. |MIB|        replace:: :abbr:`MIB (Management Information Database)`
+.. |MIB_|       replace:: :abbr:`Management Information Database (MIB)`
+.. |MII|        replace:: :abbr:`MII (Medium-Independent Interface)`
+.. |MII_|       replace:: :abbr:`Medium-Independent Interface (MII)`
+.. |MIPI|       replace:: :abbr:`MIPI (Mobile Industry Processor Interface)`
+.. |MIPI_|      replace:: :abbr:`Mobile Industry Processor Interface (MIPI)`
+.. |MMC|        replace:: :abbr:`MMC (Multi-Media Card)`
+.. |MMC_|       replace:: :abbr:`Multi-Media Card (MMC)`
+.. |NFC|        replace:: :abbr:`NFC (Near-Field Communication)`
+.. |NFC_|       replace:: :abbr:`Near-Field Communication (NFC)`
+.. |NIC|        replace:: :abbr:`NIC (Network Interface Card)`
+.. |NIC_|       replace:: :abbr:`Network Interface Card (NIC)`
+.. |NMI|        replace:: :abbr:`NMI (Non-Maskable Interrupt)`
+.. |NMI_|       replace:: :abbr:`Non-Maskable Interrupt (NMI)`
+.. |OTG|        replace:: :abbr:`OTG (On-The-Go)`
+.. |OTG_|       replace:: :abbr:`On-The-Go (OTG)`
+.. |PCI|        replace:: :abbr:`PCI (Peripheral Component Interconnect)`
+.. |PCI_|       replace:: :abbr:`Peripheral Component Interconnect (PCI)`
+.. |PCIe|       replace:: :abbr:`PCIe (PCI Express)`
+.. |PCIe_|      replace:: :abbr:`PCI Express (PCIe)`
+.. |PCM|        replace:: :abbr:`PCM (Pulse-Code Modulation)`
+.. |PCM_|       replace:: :abbr:`Pulse-Code Modulation (PCM)`
+.. |PIPE|       replace:: :abbr:`PIPE (Physical Interface for PCI Express)`
+.. |PIPE_|      replace:: :abbr:`Physical Interface for PCI Express (PIPE)`
+.. |PM|         replace:: :abbr:`PM (Power Management)`
+.. |PM_|        replace:: :abbr:`Power Management (PM)`
+.. |PMIC|       replace:: :abbr:`PMIC (Power Management IC)`
+.. |PMIC_|      replace:: :abbr:`Power Management IC (PMIC)`
+.. |POR|        replace:: :abbr:`POR (Power-On Reset)`
+.. |POR_|       replace:: :abbr:`Power-On Reset (POR)`
+.. |PWM|        replace:: :abbr:`PWM (Pulse Width Modulation)`
+.. |PWM_|       replace:: :abbr:`Pulse Width Modulation (PWM)`
+.. |QSPI|       replace:: :abbr:`QSPI (Quad SPI)`
+.. |QSPI_|      replace:: :abbr:`Quad SPI (QSPI)`
+.. |RAM|        replace:: :abbr:`RAM (Random-Access Memory)`
+.. |RAM_|       replace:: :abbr:`Random-Access Memory (RAM)`
+.. |RGMII|      replace:: :abbr:`RGMII (Reduced Gigabit MII)`
+.. |RGMII_|     replace:: :abbr:`Reduced Gigabit MII (RGMII)`
+.. |RMII|       replace:: :abbr:`RMII (Reduced MII)`
+.. |RMII_|      replace:: :abbr:`Reduced MII (RMII)`
+.. |RMON|       replace:: :abbr:`RMON (Remote Network Monitoring)`
+.. |RMON_|      replace:: :abbr:`Remote Network Monitoring (RMON)`
+.. |RTC|        replace:: :abbr:`RTC (Real-Time Clock)`
+.. |RTC_|       replace:: :abbr:`Real-Time Clock (RTC)`
+.. |RxD|        replace:: :abbr:`RxD (Receive Data)`
+.. |RxD_|       replace:: :abbr:`Receive Data (RxD)`
+.. |SAC|        replace:: :abbr:`SAC (Stereo Audio Codec)`
+.. |SAC_|       replace:: :abbr:`Stereo Audio Codec (SAC)`
+.. |SAI|        replace:: :abbr:`SAI (Synchronous Audio Interface)`
+.. |SAI_|       replace:: :abbr:`Synchronous Audio Interface (SAI)`
+.. |SD|         replace:: :abbr:`SD (Secure Digital)`
+.. |SD_|        replace:: :abbr:`Secure Digital (SD)`
+.. |SDC|        replace:: :abbr:`SD-Card (Secure Digital Card)`
+.. |SDC_|       replace:: :abbr:`Secure Digital Card (SD-Card)`
+.. |SDIO|       replace:: :abbr:`SDIO (Secure Digital Input/Output)`
+.. |SDIO_|      replace:: :abbr:`Secure Digital Input/Output (SDIO)`
+.. |SDR|        replace:: :abbr:`SDR (Single Data Rate)`
+.. |SDR_|       replace:: :abbr:`Single Data Rate (SDR)`
+.. |SDRAM|       replace:: :abbr:`SDRAM (Synchronous Dynamic RAM)`
+.. |SDRAM_|      replace:: :abbr:`Synchronous Dynamic RAM (SDRAM)`
+.. |SDXC|       replace:: :abbr:`SDXC (Secure Digital Extended Capacity)`
+.. |SDXC_|      replace:: :abbr:`Secure Digital Extended Capacity (SDXC)`
+.. |SFD|        replace:: :abbr:`SFD (Start Frame Delimiter)`
+.. |SFD_|       replace:: :abbr:`Start Frame Delimiter (SFD)`
+.. |SNVS|       replace:: :abbr:`SNVS (Secure Non-Volatile Storage)`
+.. |SNVS_|      replace:: :abbr:`Secure Non-Volatile Storage (SNVS)`
+.. |SoC|        replace:: :abbr:`SoC (System on Chip)`
+.. |SoC_|       replace:: :abbr:`System on Chip (SoC)`
+.. |SoM|        replace:: :abbr:`SoM (System on Module)`
+.. |SoM_|       replace:: :abbr:`System on Module (SoM)`
+.. |SPI|        replace:: :abbr:`SPI (Serial Peripheral Interface)`
+.. |SPI_|       replace:: :abbr:`Serial Peripheral Interface (SPI)`
+.. |SRC|        replace:: :abbr:`SRC (System Reset Controller)`
+.. |SRC_|       replace:: :abbr:`System Reset Controller (SRC)`
+.. |SS|         replace:: :abbr:`SS (Slave Select)`
+.. |SS_|        replace:: :abbr:`Slave Select (SS)`
+.. |SWD|        replace:: :abbr:`SWD (Serial-Wire Debug)`
+.. |SWD_|       replace:: :abbr:`Serial-Wire Debug (SWD)`
+.. |TAP|        replace:: :abbr:`TAP (Test Access Port)`
+.. |TAP_|       replace:: :abbr:`Test Access Port (TAP)`
+.. |TCP|        replace:: :abbr:`TCP (Transmission Control Protocol)`
+.. |TCP_|       replace:: :abbr:`Transmission Control Protocol (TCP)`
+.. |TFT|        replace:: :abbr:`TFT (Thin-Film Transistor)`
+.. |TFT_|       replace:: :abbr:`Thin-Film Transistor (TFT)`
+.. |TS|         replace:: :abbr:`TS (Touch Screen)`
+.. |TS_|        replace:: :abbr:`Touch Screen (TS)`
+.. |TSC|        replace:: :abbr:`TSC (Touch Screen Controller)`
+.. |TSC_|       replace:: :abbr:`Touch Screen Controller (TSC)`
+.. |TTY|        replace:: :abbr:`TTY (Teletypewriter)`
+.. |TTY_|       replace:: :abbr:`Teletypewriter (TTY)`
+.. |TxD|        replace:: :abbr:`TxD (Transmit Data)`
+.. |TxD_|       replace:: :abbr:`Transmit Data (TxD)`
+.. |UART|       replace:: :abbr:`UART (Universal Asynchronous Receiver-Transmitter)`
+.. |UART_|      replace:: :abbr:`Universal Asynchronous Receiver-Transmitter (UART)`
+.. |UDP|        replace:: :abbr:`UDP (User Datagram Protocol)`
+.. |UDP_|       replace:: :abbr:`User Datagram Protocol (UDP)`
+.. |ULPI|       replace:: :abbr:`ULPI (UTMI Low Pin Interface)`
+.. |ULPI_|      replace:: :abbr:`UTMI Low Pin Interface (ULPI)`
+.. |USART|      replace:: :abbr:`USART (Universal Synchronous and Asynchronous Receiver-Transmitter)`
+.. |USART_|     replace:: :abbr:`Universal Synchronous and Asynchronous Receiver-Transmitter (USART)`
+.. |USB|        replace:: :abbr:`USB (Universal Serial Bus)`
+.. |USB_|       replace:: :abbr:`Universal Serial Bus (USB)`
+.. |USDHC|      replace:: :abbr:`USDHC (Ultra Secure Digital Host Controller)`
+.. |USDHC_|     replace:: :abbr:`Ultra Secure Digital Host Controller (USDHC)`
+.. |UTMI|       replace:: :abbr:`UTMI (USB 2.0 Transceiver Macrocell Interface)`
+.. |UTMI_|      replace:: :abbr:`USB 2.0 Transceiver Macrocell Interface (UTMI)`
+.. |VLAN|       replace:: :abbr:`VLAN (Virtual LAN)`
+.. |VLAN_|      replace:: :abbr:`Virtual LAN (VLAN)`
+.. |VPU|        replace:: :abbr:`VPU (Video Processing Unit)`
+.. |VPU_|       replace:: :abbr:`Video Processing Unit (VPU)`
+.. |WAN|        replace:: :abbr:`WAN (Wide Area Network)`
+.. |WAN_|       replace:: :abbr:`Wide Area Network (WAN)`
+.. |WDOG|       replace:: :abbr:`WDOG (Watchdog)`
+.. |WDOG_|      replace:: :abbr:`Watchdog (WDOG)`
+.. |WDT|        replace:: :abbr:`WDT (Watchdog Timer)`
+.. |WDT_|       replace:: :abbr:`Watchdog Timer (WDT)`
+.. |WiFi|       replace:: :abbr:`Wi-Fi (WLAN)`
+.. |WiFi_|      replace:: :abbr:`WLAN (Wi-Fi)`
+.. |WLAN|       replace:: :abbr:`WLAN (Wireless LAN)`
+.. |WLAN_|      replace:: :abbr:`Wireless LAN (WLAN)`
+
+
+.. Local variables:
+   coding: utf-8
+   mode: text
+   mode: rst
+   End:
+   vim: fileencoding=utf-8 filetype=rst :

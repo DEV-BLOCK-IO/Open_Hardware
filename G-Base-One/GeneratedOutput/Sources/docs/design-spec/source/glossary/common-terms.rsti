@@ -1,0 +1,30 @@
+.. Never add or change more than term replacements (ex. LaTeX formatting).
+
+.. Glossary Replacements:
+
+.. Commons:
+
+.. |Docutils|                   replace:: :term:`Docutils`
+.. |LaTeX|                      replace:: :term:`LaTeX`
+.. |PyEnchant|                  replace:: :term:`PyEnchant`
+.. |Pybtex|                     replace:: :term:`Pybtex`
+.. |Pygments|                   replace:: :term:`Pygments`
+.. |ReportLab|                  replace:: :term:`ReportLab`
+.. |reStructuredText|           replace:: :term:`reStructuredText`
+.. |Sphinx|                     replace:: :term:`Sphinx`
+
+.. _`Docutils`: https://docutils.sourceforge.io/
+.. _`LaTeX`: https://www.latex-project.org/
+.. _`PyEnchant`: https://github.com/pyenchant/pyenchant
+.. _`Pybtex`: https://pybtex.org/
+.. _`Pygments`: https://pygments.org/
+.. _`ReportLab`: https://www.reportlab.com/
+.. _`reStructuredText`: https://docutils.sourceforge.io/rst.html
+.. _`Sphinx`: https://www.sphinx-doc.org/
+
+.. Local variables:
+   coding: utf-8
+   mode: text
+   mode: rst
+   End:
+   vim: fileencoding=utf-8 filetype=rst :

@@ -1,0 +1,3 @@
+Layer Pairs Export File for PCB: D:\GoogleDrive\Entwicklung\Circuitstudio_Workspace\E-Rubin_G1_Board_Base\erb-pcb0005.PcbDoc
+LayersSetName=Top_Bot_Thru_Holes|DrillFile=erb-pcb0005-roundholes.txt|DrillLayers=gtl,g1,g2,gbl
+LayersSetName=Top_Bot_Slot_Holes|DrillFile=erb-pcb0005-slotholes.txt|DrillLayers=gtl,g1,g2,gbl
